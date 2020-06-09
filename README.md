@@ -89,6 +89,7 @@ src
       |__ Profile.jsx
       |__ CreatePost.jsx
       |__ UpdatePost.jsx
+      |__ ShowPost.jsx
       |__ ShowPosts.jsx
       |__ Login.jsx
       |__ Register.jsx
@@ -105,9 +106,10 @@ src
 |  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
 |  Login       | functional |   y   |   y   | _                                                                |
 |  Register    | functional |   y   |   y   | _                                                                |
-|  ShowPosts   |   class    |   y   |   n   | _The showPosts will render the posts on one page_                |
 |  CreatePost  | functional |   y   |   y   | _The new post created will render the post info via props._      |
 |  UpdatePost  | functional |   y   |   y   | _The updated post  will render the post info via props._         |
+|  ShowPost    | functional |   y   |   y   | _This will be the individual post page._                         |
+|  ShowPosts   |   class    |   y   |   n   | _The showPosts will render the posts on one page_                |
 |    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
 
 #### Component Estimates
