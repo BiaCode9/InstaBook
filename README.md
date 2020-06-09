@@ -117,14 +117,14 @@ src
 | Build Rails Server        |    L     |     5 hrs      |               |     TBD     |
 | Implement Authentication  |    M     |     5 hrs      |               |     TBD     |
 | Create CRUD Actions       |    H     |     6 hrs      |               |     TBD     |
-| Create React Components   |    H     |     10 hrs     |               |     TBD     |
+| Create React Components   |    H     |     12 hrs     |               |     TBD     |
 | Render Data in Components |    H     |     6 hrs      |               |     TBD     |
 | Utilize React Router      |    H     |     3 hrs      |               |     TBD     |
 | Utilize Authentication    |    H     |     6 hrs      |               |     TBD     |
 | Style Components          |    H     |     8 hrs      |               |     TBD     |
 | Style layout with Flex Box|    H     |     6 hrs      |               |     TBD     |
 | Implement Media Queries   |    H     |     6 hrs      |               |     TBD     |
-| TOTAL                     |          |     62 hrs     |               |     TBD     |
+| TOTAL                     |          |     64 hrs     |               |     TBD     |
 
 
 <br>
