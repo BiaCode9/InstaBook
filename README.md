@@ -67,7 +67,7 @@ _InstaBook** is an accelerated, real-time job-booking app.  It provides a platfo
 
 <img src="https://i.imgur.com/Ivzz2fq.png" />
 
-<img src="https://i.imgur.com/4VSfM4P.png" />
+<img src="https://i.imgur.com/L9sRHtI.png" />
 
 <img src="https://i.imgur.com/53LKPYt.png" />
 
