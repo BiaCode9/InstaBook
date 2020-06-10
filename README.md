@@ -71,7 +71,7 @@ _InstaBook** is an accelerated, real-time job-booking app.  It provides a platfo
 
 #### Component Tree
 
-<img src=https://i.imgur.com/SjszCpw.png />
+<img src="https://i.imgur.com/OVEpjg3.png" />
 
 #### Component Hierarchy
 
