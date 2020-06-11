@@ -17,7 +17,10 @@ export default class App extends Component {
     this.setState({ user });
   }
 
-
+  handleLoginSubmit = async (data) => {
+    const user = await loginUser(data);
+    this.setState({ user });
+  }
 
 
 
