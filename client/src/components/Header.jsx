@@ -5,7 +5,8 @@ export default function Header() {
   return (
     <div>
       <h1>InstaBook</h1>
-      <Link to='/user/login'>Log In</Link>
+      <Link to='/user/login'>Sign In</Link>
+      <Link to='/user/register'>Sign Up</Link>
     </div>
   )
 }

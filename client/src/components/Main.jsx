@@ -7,11 +7,11 @@ export default class Main extends Component {
   render() {
     return (
       <main>
-        <Route path='/user/login' render={()}=>(
+        <Route path='/user/signin' render={() => (
 
+          <></>
 
-
-        )}/>
+        )} />
 
       </main>
     )
