@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
 import { registerUser } from './services/auth'
+import { loginUser } from './services/auth'
 
 
 export default class App extends Component {
@@ -31,6 +32,7 @@ export default class App extends Component {
         <Header />
         <Main
           handleRegisterSubmit={this.handleRegisterSubmit}
+          handleLoginSubmit={this.handleLoginSubmit}
         />
       </div>
     )
