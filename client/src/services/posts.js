@@ -12,13 +12,13 @@ export const getOnePost = async (id) => {
   return resp.data;
 }
 
-export const createComment = async (commentData) => {
-  const resp = await api.post('/comments', { comment: commentData });
+export const createPost = async (postData) => {
+  const resp = await api.post('/posts', { post: postData });
   return resp.data;
 }
 
-export const updateComment = async (id, commentData) => {
-  const resp = await api.put(`/foods/${id}`, { comment: commentData });
+export const updatePost = async (id, postData) => {
+  const resp = await api.put(`/foods/${id}`, { post: postData });
   return resp.data;
 }
 
