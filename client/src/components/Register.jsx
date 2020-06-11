@@ -16,7 +16,7 @@ export default class Register extends Component {
   }
 
   render() {
-    const { username, email, password } = this.state;
+    const { firstname, lastname, email, username, password } = this.state;
     const { handleRegisterSubmit, history } = this.props;
     return (
       <form onSubmit={(e) => {
@@ -24,8 +24,10 @@ export default class Register extends Component {
         handleRegisterSubmit(this.state);
         history.push('/');
         this.setState({
-          username: "",
+          firstname: "",
+          lastname: "",
           email: "",
+          username: "",
           password: ""
         })
       }}>
