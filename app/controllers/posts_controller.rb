@@ -1,5 +1,10 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :update, :destroy]
+  before_action :set_post, only: %i[show update destroy]
+  before_action :authorize_request, only: %i[create update destroy]
+  before_action :is_this_mine, only: %i[update destroy]
+
 
   # GET /posts
   def index
@@ -16,7 +21,7 @@ class PostsController < ApplicationController
   # POST /posts
   def create
     @post = Post.new(post_params)
-
+    @post.user = @current_user
     if @post.save
       render json: @post, status: :created, location: @post
     else
@@ -39,13 +44,20 @@ class PostsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def post_params
-      params.require(:post).permit(:name, :description, :startdate, :enddate, :user_id)
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  def is_this_mine
+    if @current_user.id != @post.user_id
+      render json: {:error => "unauthorized"}, status: :unauthorized
     end
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def post_params
+    params.require(:post).permit(:name, :description, :startdate, :enddate, :user_id)
+  end
 end
