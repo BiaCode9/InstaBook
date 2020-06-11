@@ -18,11 +18,11 @@ export const createPost = async (postData) => {
 }
 
 export const updatePost = async (id, postData) => {
-  const resp = await api.put(`/foods/${id}`, { post: postData });
+  const resp = await api.put(`/posts/${id}`, { post: postData });
   return resp.data;
 }
 
-export const deleteComment = async (id) => {
-  const resp = await api.delete(`/comments/${id}`);
+export const deletePost = async (id) => {
+  const resp = await api.delete(`/posts/${id}`);
   return resp
 }
