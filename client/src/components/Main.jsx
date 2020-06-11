@@ -1,19 +1,14 @@
 import React, { PureComponent } from 'react'
 
-class Main extends PureComponent {
-  constructor(props) {
-    super(props)
+export default class Main extends Component {
 
-    this.state = {
-
-    }
-  }
 
   render() {
     return (
-      
+      <main>
+
+
+      </main>
     )
   }
 }
-
-export default Main
