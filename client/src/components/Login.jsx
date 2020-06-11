@@ -28,7 +28,7 @@ export default class Login extends Component {
         })
       }}>
         <h3>Login</h3>
-        <label htmlFor="username">username:
+        <label htmlFor="username">User Name:
           <input
             id="username"
             type="text"
@@ -38,7 +38,7 @@ export default class Login extends Component {
           />
         </label>
         <br />
-        <label htmlFor="password">password:
+        <label htmlFor="password">Password:
           <input
             id="password"
             type="password"
