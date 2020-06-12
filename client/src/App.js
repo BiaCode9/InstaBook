@@ -23,14 +23,19 @@ export default class App extends Component {
     this.setState({ currentUser });
   }
 
+  handleLogout = () => {
+    this.setState({
+      currentUser: null
+    })
 
+  }
 
 
   render() {
     return (
       <div>
         <Header
-          user={this.state.currentUser}
+        // currentUser={this.state.currentUser}
 
 
         />
