@@ -25,12 +25,22 @@ export default class CreatePost extends Component {
         })
       }}>
         <hr />
-        <h3>Create Food</h3>
-        <label htmlFor="post">Name:</label>
+        <h3>Create Post</h3>
+        <label htmlFor="title">Job Title:</label>
         <input
           id="id"
           type="text"
           value={post}
+          onChange={this.handleChange}
+        />
+        <label htmlFor="post">Post:</label>
+        <textarea
+          className="textarea-description"
+          rows={10}
+          placeholder='Description'
+          value={post}
+          name='description'
+          required
           onChange={this.handleChange}
         />
         <button>Submit</button>
