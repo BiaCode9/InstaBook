@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
-import { registerUser } from './services/auth'
-import { loginUser } from './services/auth'
+import { registerUser, loginUser, removeToken } from './services/auth'
 
 
 export default class App extends Component {
@@ -37,8 +36,8 @@ export default class App extends Component {
     return (
       <div>
         <Header
-        // currentUser={this.state.currentUser}
-
+          currentUser={this.state.currentUser}
+          handleLogout={this.handleLogout}
 
         />
         <Main
