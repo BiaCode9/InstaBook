@@ -14,8 +14,8 @@ export default function ShowPosts(props) {
             {
               currentUser && currentUser.id === post.user_id && (
                 <>
-                  <button>edit</button>
-                  <button onClick={() => destroyPost(post.id)}>delete</button>
+                  <button>Edit</button>
+                  <button onClick={() => destroyPost(post.id)}>Delete</button>
                 </>
               )
             }
