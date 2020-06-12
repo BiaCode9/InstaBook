@@ -50,6 +50,7 @@ export default class App extends Component {
 
         />
         <Main
+          currentUser={this.state.currentUser}
           handleRegisterSubmit={this.handleRegisterSubmit}
           handleLoginSubmit={this.handleLoginSubmit}
         />

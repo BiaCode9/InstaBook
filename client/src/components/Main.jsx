@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
-import { getAllPosts, createPost, deletePost } from '../services/posts';
+import { getAllPosts, createPost, deletePost, getAllUserPosts } from '../services/posts';
 import ShowPosts from './ShowPosts';
 import CreatePost from './CreatePost';
 
-export default class Main extends Component {
 
-  state = {
-    posts: []
+export default class Main extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      posts: [],
+    }
   }
 
   componentDidMount() {
@@ -19,6 +22,12 @@ export default class Main extends Component {
 
   getPosts = async () => {
     const posts = await getAllPosts();
+    this.setState({ posts });
+  }
+
+
+  getUserPosts = async () => {
+    const posts = await getAllUserPosts(this.props.currentUser.id);
     this.setState({ posts });
   }
 
@@ -64,7 +73,9 @@ export default class Main extends Component {
 
           <ShowPosts
             posts={this.state.posts}
-
+            currentUser={this.props.currentUser}
+            destroyPost={this.destroyPost}
+          // getUserPosts={this.getUserPosts}
           />
 
         )} />

@@ -1,13 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getAllUserPosts } from '../services/posts';
 
 export default function ShowPosts(props) {
   const { posts, currentUser, destroyPost } = props;
+  console.log(currentUser)
+
+
+  const getAllUserPosts = () => {
+    if (currentUser) {
+      props.getUserPosts()
+    }
+
+  }
+
   return (
     <>
       <hr />
       <h3>Posts</h3>
       {
+        // getAllUserPosts() &&
         posts.map(post => (
           <React.Fragment key={post.id}>
             <p>{post.name}</p>

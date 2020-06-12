@@ -7,6 +7,11 @@ export const getAllPosts = async () => {
   return resp.data;
 }
 
+export const getAllUserPosts = async (id) => {
+  const resp = await api.get(`/posts/${id}/user_index`);
+  return resp.data;
+}
+
 export const getOnePost = async (id) => {
   const resp = await api.get(`/posts/${id}`);
   return resp.data;
