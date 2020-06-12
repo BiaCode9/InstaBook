@@ -20,7 +20,7 @@ export default function Header(props) {
       {
         props.currentUser && (
           <nav>
-            <NavLink to="/myposts">My Posts</NavLink>
+            <NavLink to="/posts">My Posts</NavLink>
             <NavLink to="/allposts">All Posts</NavLink>
           </nav>
         )
