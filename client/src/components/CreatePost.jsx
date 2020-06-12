@@ -33,6 +33,13 @@ export default class CreatePost extends Component {
           value={post}
           onChange={this.handleChange}
         />
+        <label htmlFor="title">Location:</label>
+        <input
+          id="id"
+          type="text"
+          value={post}
+          onChange={this.handleChange}
+        />
         <label htmlFor="post">Post:</label>
         <textarea
           className="textarea-description"
