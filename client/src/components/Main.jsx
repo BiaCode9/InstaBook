@@ -5,6 +5,22 @@ import Register from './Register';
 
 export default class Main extends Component {
 
+  state = {
+    posts: []
+  }
+
+  componentDidMount() {
+    this.getMyPosts();
+  }
+
+
+  getMyPosts = async () => {
+    const posts = await getAllPosts();
+    this.setState({ posts });
+  }
+
+
+
 
   render() {
     return (
