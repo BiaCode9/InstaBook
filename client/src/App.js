@@ -14,13 +14,13 @@ export default class App extends Component {
   }
 
   handleRegisterSubmit = async (data) => {
-    const user = await registerUser(data);
-    this.setState({ user });
+    const currentUser = await registerUser(data);
+    this.setState({ currentUser });
   }
 
   handleLoginSubmit = async (data) => {
-    const user = await loginUser(data);
-    this.setState({ user });
+    const currentUser = await loginUser(data);
+    this.setState({ currentUser });
   }
 
 
@@ -29,7 +29,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header
+          user={this.state.currentUser}
+
+
+        />
         <Main
           handleRegisterSubmit={this.handleRegisterSubmit}
           handleLoginSubmit={this.handleLoginSubmit}
