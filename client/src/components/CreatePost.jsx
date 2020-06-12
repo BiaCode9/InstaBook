@@ -5,7 +5,9 @@ export default class CreatePost extends Component {
     {
       name: "",
       location: "",
-      description: ""
+      description: "",
+      startdate: "",
+      enddate: "",
     }
 
   handleChange = (e) => {
@@ -16,7 +18,7 @@ export default class CreatePost extends Component {
   }
 
   render() {
-    const { description, location, name } = this.state;
+    const { name, location, description, startdate, enddate } = this.state;
     const { postPost, history } = this.props;
     return (
       <form onSubmit={(e) => {
@@ -24,9 +26,11 @@ export default class CreatePost extends Component {
         postPost(this.state);
         history.push('/posts');
         this.setState({
-          description: "",
+          name: "",
           location: "",
-          name: ""
+          description: "",
+          startdate: "",
+          enddate: ""
         })
       }}>
         <hr />
@@ -47,6 +51,25 @@ export default class CreatePost extends Component {
           name='location'
           onChange={this.handleChange}
         />
+        <label htmlFor="title">Start Date:</label>
+        <input
+          id="id"
+          type="text"
+          value={startdate}
+          name='startdate'
+          onChange={this.handleChange}
+        />
+        <label htmlFor="title">End Date:</label>
+        <input
+          id="id"
+          type="text"
+          value={enddate}
+          name='enddate'
+          onChange={this.handleChange}
+        />
+
+
+
         <label htmlFor="post">Post:</label>
         <textarea
           className="textarea-description"
