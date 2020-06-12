@@ -27,6 +27,8 @@ export default class App extends Component {
     this.setState({
       currentUser: null
     })
+    localStorage.clear();
+    removeToken();
 
   }
 
