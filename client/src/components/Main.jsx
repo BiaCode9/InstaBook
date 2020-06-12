@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
-import { getAllPosts } from '../services/posts';
+import { getAllPosts, createFood } from '../services/posts';
+import ShowPosts from './ShowPosts';
+import CreatePost from './CreatePost';
 
 export default class Main extends Component {
 
@@ -52,6 +54,13 @@ export default class Main extends Component {
 
           />
 
+        )} />
+
+        <Route path='/new/post' render={(props) => (
+          <CreatePost
+            {...props}
+            postPost={this.postPost}
+          />
         )} />
 
 
