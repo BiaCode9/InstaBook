@@ -10,11 +10,11 @@ export default class Main extends Component {
   }
 
   componentDidMount() {
-    this.getMyPosts();
+    this.getPosts();
   }
 
 
-  getMyPosts = async () => {
+  getPosts = async () => {
     const posts = await getAllPosts();
     this.setState({ posts });
   }
