@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
+import { getAllPosts } from '../services/posts';
 
 export default class Main extends Component {
 
