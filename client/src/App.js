@@ -9,7 +9,7 @@ export default class App extends Component {
 
   state = {
 
-    user: null
+    currentUser: null
 
   }
 

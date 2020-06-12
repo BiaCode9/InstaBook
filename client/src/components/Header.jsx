@@ -5,7 +5,15 @@ export default function Header() {
   return (
     <div>
       <h1>InstaBook</h1>
-      <Link to='/user/login'>Sign In</Link>
+
+      {
+        props.currentUser
+          ?
+          <>{props.currentUser.username}<button onClick={props.handleLogout}>Logout</button></>
+          :
+          <Link to='/user/login'>Login/Register</Link>
+      }
+
       <Link to='/user/register'>Sign Up</Link>
     </div>
   )
