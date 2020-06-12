@@ -2,14 +2,18 @@
 
 class PostsController < ApplicationController
   before_action :set_post, only: %i[show update destroy]
-  before_action :authorize_request, only: %i[create update destroy]
+  before_action :authorize_request, only: %i[create update destroy user_index]
   before_action :is_this_mine, only: %i[update destroy]
-
 
   # GET /posts
   def index
     @posts = Post.all
 
+    render json: @posts
+  end
+
+  def user_index
+    @posts = @current_user.posts
     render json: @posts
   end
 
@@ -48,16 +52,15 @@ class PostsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_post
     @post = Post.find(params[:id])
+    # @food = @current_user.posts.find(params[:id])
   end
 
   def is_this_mine
-    if @current_user.id != @post.user_id
-      render json: {:error => "unauthorized"}, status: :unauthorized
-    end
+    render json: { error: 'unauthorized' }, status: :unauthorized if @current_user.id != @post.user_id
   end
 
   # Only allow a trusted parameter "white list" through.
   def post_params
-    params.require(:post).permit(:name, :description, :startdate, :enddate, :user_id)
+    params.require(:post).permit(:name, :description, :location, :startdate, :enddate, :user_id)
   end
 end
