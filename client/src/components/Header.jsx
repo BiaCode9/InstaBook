@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header(props) {
   return (
@@ -15,6 +15,15 @@ export default function Header(props) {
             <Link to='/user/login'>Sign In</Link>
             <Link to='/user/register'>Sign Up</Link>
           </>
+      }
+      <hr />
+      {
+        props.currentUser && (
+          <nav>
+            <NavLink to="/foods">My Posts</NavLink>
+            <NavLink to="/flavors">All Posts</NavLink>
+          </nav>
+        )
       }
     </div>
   )
