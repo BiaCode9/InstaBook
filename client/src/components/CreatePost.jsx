@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 
 export default class CreatePost extends Component {
-  state = {
-    post: ""
-  }
+  state =
+    {
+      name: "",
+      location: "",
+      description: ""
+    }
 
   handleChange = (e) => {
-    const { value } = e.target;
+    const { value, name } = e.target;
     this.setState({
-      post: value
+      [name]: value
     })
   }
 
   render() {
-    const { post } = this.state;
+    const { description, location, name } = this.state;
     const { postPost, history } = this.props;
     return (
       <form onSubmit={(e) => {
@@ -21,7 +24,9 @@ export default class CreatePost extends Component {
         postPost(this.state);
         history.push('/posts');
         this.setState({
-          post: ""
+          description: "",
+          location: "",
+          name: ""
         })
       }}>
         <hr />
@@ -30,14 +35,16 @@ export default class CreatePost extends Component {
         <input
           id="id"
           type="text"
-          value={post}
+          value={name}
+          name='name'
           onChange={this.handleChange}
         />
         <label htmlFor="title">Location:</label>
         <input
           id="id"
           type="text"
-          value={post}
+          value={location}
+          name='location'
           onChange={this.handleChange}
         />
         <label htmlFor="post">Post:</label>
@@ -45,7 +52,7 @@ export default class CreatePost extends Component {
           className="textarea-description"
           rows={10}
           placeholder='Description'
-          value={post}
+          value={description}
           name='description'
           required
           onChange={this.handleChange}

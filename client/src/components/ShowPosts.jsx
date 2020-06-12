@@ -11,6 +11,8 @@ export default function ShowPosts(props) {
         posts.map(post => (
           <React.Fragment key={post.id}>
             <p>{post.name}</p>
+            <p>{post.location}</p>
+            <p>{post.description}</p>
             {
               currentUser && currentUser.id === post.user_id && (
                 <>
