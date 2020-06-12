@@ -45,6 +45,14 @@ export default class Main extends Component {
           />
 
         )} />
+        <Route path='/posts' render={() => (
+
+          <ShowPosts
+            posts={this.state.posts}
+
+          />
+
+        )} />
 
 
       </main>
