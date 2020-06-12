@@ -31,6 +31,11 @@ export default class App extends Component {
 
   }
 
+  handleVerify = async () => {
+    const currentUser = await verifyUser();
+    this.setState({ currentUser })
+  }
+
 
   render() {
     return (
