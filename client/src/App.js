@@ -12,6 +12,10 @@ export default class App extends Component {
 
   }
 
+  componentDidMount() {
+    this.handleVerify()
+  }
+
   handleRegisterSubmit = async (data) => {
     const currentUser = await registerUser(data);
     this.setState({ currentUser });
