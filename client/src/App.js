@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
-import { registerUser, loginUser, removeToken } from './services/auth'
+import { registerUser, loginUser, removeToken, verifyUser } from './services/auth'
 
 
 export default class App extends Component {
