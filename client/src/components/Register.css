@@ -18,3 +18,12 @@
   
  
   }
+
+
+  .joinus-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 30px;
+}

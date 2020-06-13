@@ -36,7 +36,9 @@ export default class Register extends Component {
       }}>
         <h3>Sign Up</h3>
         <div className='form-container-signup'>
-          <h3>Join Us!</h3>
+          <div className="joinus-title">
+            <h3>Join Us!</h3>
+          </div>
           <label htmlFor="firstname">First Name:
           <input
               id="firstname"
