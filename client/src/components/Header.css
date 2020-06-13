@@ -6,32 +6,9 @@
   justify-content: space-around;
   box-shadow: 0 0 28px 8px rgba(93, 193, 223, 0.5);
   border: 10px solid transparent;
-
   
 }
 
-.signin {
-  display: flex;
-  justify-self: left;
-}
-.signin-signup {
-  display: flex;
-  justify-content: space-between;
-  justify-items: flex-end;
-
-}
-
-/* .sign-in {
-  display: flex;
-  text-align: center;
-
-}
-
-.signup {
-  display: flex;
-  text-align: center;
-  
-} */
 
 .instabook-logo {
   /* font-size: 28px; */
@@ -43,7 +20,6 @@
 /* font-family: cursive; */
   /* margin: 20px; */
 
-
 }
 
 .logout-button {
@@ -52,18 +28,8 @@
   border-radius: 2px;
 }
 
+nav {
+display: flex;
 
 
-
-
-/* .signin {
-
-  
 }
-
-
-.signup {
-
-  
-} */
-
