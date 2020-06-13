@@ -10,7 +10,8 @@
   align-items: center;
   padding: 10px 20px 10px;
   justify-content: space-evenly;
-  margin: 250px auto;
+
+  margin: 150px auto;
   box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;

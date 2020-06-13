@@ -40,7 +40,7 @@ export default class Login extends Component {
                 type="text"
                 name="username"
                 value={username}
-                placeholder="JonnyDoe"
+                placeholder="Username"
                 onChange={this.handleChange}
               />
             </label>
@@ -51,7 +51,7 @@ export default class Login extends Component {
                 type="password"
                 name="password"
                 value={password}
-                placeholder="123456"
+                placeholder="Password"
                 onChange={this.handleChange}
               />
             </label>

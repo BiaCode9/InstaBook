@@ -6,8 +6,8 @@ export default function Header(props) {
   return (
     <div className="header">
       <div className="instabook-logo">
-        {/* <img src="https://i.imgur.com/Jhcwr3L.png" alt="instabook-logo" /> */}
-        <h1>InstaBook</h1>
+        <img src="https://i.imgur.com/HxMMOy3.png" alt="instabook-logo" />
+        {/* <h1>InstaBook</h1> */}
       </div>
       {
         props.currentUser
@@ -16,13 +16,12 @@ export default function Header(props) {
           :
           <>
             <div className="signin-signup">
-              <div className="signin">
-                <Link to='/user/login'>Sign In</Link>
-              </div>
-              <div className="signup">
-                <Link to='/user/register'>Sign Up</Link>
-              </div>
+              <Link className="signin" to='/user/login'>Sign In</Link>
             </div>
+            <div className="signup">
+              <Link to='/user/register'>Sign Up</Link>
+            </div>
+
           </>
       }
       <hr />
@@ -38,6 +37,6 @@ export default function Header(props) {
           </nav>
         )
       }
-    </div>
+    </div >
   )
 }

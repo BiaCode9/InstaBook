@@ -1,23 +1,27 @@
 .header {
   /* background-color:rgba(238, 218, 235, 0.5); */
-  background-color:rgba(71, 69, 69, 0.5);
+  background-color:rgba(71, 69, 69, 0.20);
   /* background-color: rgb(201, 79, 79); */
   display: flex;
   justify-content: space-around;
   box-shadow: 0 0 28px 8px rgba(93, 193, 223, 0.5);
-  border: 5px solid transparent;
+  border: 10px solid transparent;
 
   
 }
 
-
+.signin {
+  display: flex;
+  justify-self: left;
+}
 .signin-signup {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  justify-items: flex-end;
 
 }
 
-.sign-in {
+/* .sign-in {
   display: flex;
   text-align: center;
 
@@ -27,13 +31,16 @@
   display: flex;
   text-align: center;
   
-}
+} */
 
 .instabook-logo {
-  font-size: 28px;
-  margin-left: 50px;
-  color: whitesmoke;
-font-family: cursive;
+  /* font-size: 28px; */
+  margin-top: -225px;
+  margin-left: -350px;
+  margin-bottom: -200px;
+  transform: rotate(-27deg);
+  /* color: whitesmoke; */
+/* font-family: cursive; */
   /* margin: 20px; */
 
 

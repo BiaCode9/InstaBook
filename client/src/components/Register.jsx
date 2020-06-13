@@ -44,6 +44,7 @@ export default class Register extends Component {
               id="firstname"
               type="text"
               name="firstname"
+              placeholder="First Name"
               value={firstname}
               onChange={this.handleChange}
             />
@@ -54,6 +55,7 @@ export default class Register extends Component {
               id="lastname"
               type="text"
               name="lastname"
+              placeholder="Last Name"
               value={lastname}
               onChange={this.handleChange}
             />
@@ -64,6 +66,7 @@ export default class Register extends Component {
               id="email"
               type="text"
               name="email"
+              placeholder="E-mail"
               value={email}
               onChange={this.handleChange}
             />
@@ -74,6 +77,7 @@ export default class Register extends Component {
               id="username"
               type="text"
               name="username"
+              placeholder="Username"
               value={username}
               onChange={this.handleChange}
             />
@@ -84,6 +88,7 @@ export default class Register extends Component {
               id="password"
               type="password"
               name="password"
+              placeholder="Password"
               value={password}
               onChange={this.handleChange}
             />
