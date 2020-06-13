@@ -27,3 +27,14 @@
   /* font-family: 'Roboto', sans-serif; */
   font-size: 30px;
 }
+
+.signup-button {
+  background-color: powderblue; 
+  height: 50px;
+  width: 175px;
+  border-radius: 5px;
+  font-size: 18px;
+  
+ 
+ }
+

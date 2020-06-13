@@ -33,8 +33,9 @@
   .login-button {
    background-color: powderblue; 
    height: 50px;
-   width: 150px;
+   width: 175px;
    border-radius: 5px;
+   font-size: 18px;
    
   
   }
