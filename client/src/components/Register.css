@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px 10px;
+  padding: 10px 20px 40px;
   justify-content: space-evenly;
   margin: 65px auto;
   box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.5);
@@ -23,7 +23,6 @@
   .joinus-title {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
   /* font-family: 'Roboto', sans-serif; */
   font-size: 35px;
   font-family: 'Times New Roman', Times, serif;
