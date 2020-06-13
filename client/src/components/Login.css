@@ -22,7 +22,7 @@
     display: flex;
     justify-content: center;
     margin-top: 15px;
-   
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 25px;
 
   }
@@ -32,3 +32,14 @@
    
   
   }
+
+  body {
+    background-image: url("https://i.imgur.com/noVfnyi.jpg");
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
