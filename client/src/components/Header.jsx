@@ -6,6 +6,7 @@ export default function Header(props) {
   return (
     <div className="header">
       <div className="instabook-logo">
+        <img src="https://i.imgur.com/Jhcwr3L.png" alt="instabook-logo" />
         <h1>InstaBook</h1>
       </div>
       {

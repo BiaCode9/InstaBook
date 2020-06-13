@@ -31,7 +31,7 @@ export default class Login extends Component {
           })
         }}>
           <div className='form-container-login'>
-            <div className="login-title">
+            <div className="welcomeback-title">
               <h3>Welcome Back!</h3>
             </div>
             <label htmlFor="username">User Name:
@@ -56,9 +56,9 @@ export default class Login extends Component {
               />
             </label>
             <br />
-            <div className="login-button">
-              <button>Login to InstaBook </button>
-            </div>
+
+            <button className="login-button">Login to InstaBook </button>
+
           </div>
         </form>
       </body>
