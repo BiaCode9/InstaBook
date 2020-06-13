@@ -14,11 +14,13 @@ export default function Header(props) {
           <>{props.currentUser.username}<button onClick={props.handleLogout}>Logout</button></>
           :
           <>
-            <div className="signin">
-              <Link to='/user/login'>Sign In</Link>
-            </div>
-            <div className="signup">
-              <Link to='/user/register'>Sign Up</Link>
+            <div className="signin-signup">
+              <div className="signin">
+                <Link to='/user/login'>Sign In</Link>
+              </div>
+              <div className="signup">
+                <Link to='/user/register'>Sign Up</Link>
+              </div>
             </div>
           </>
       }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
+import './Login.css'
 
 export default class Login extends Component {
   state = {
@@ -28,29 +29,31 @@ export default class Login extends Component {
         })
       }}>
         <h3>Login</h3>
-        <label htmlFor="username">User Name:
+        <div className='form-container-login'>
+          <label htmlFor="username">User Name:
           <input
-            id="username"
-            type="text"
-            name="username"
-            value={username}
-            placeholder="JonnyDoe"
-            onChange={this.handleChange}
-          />
-        </label>
-        <br />
-        <label htmlFor="password">Password:
+              id="username"
+              type="text"
+              name="username"
+              value={username}
+              placeholder="JonnyDoe"
+              onChange={this.handleChange}
+            />
+          </label>
+          <br />
+          <label htmlFor="password">Password:
           <input
-            id="password"
-            type="password"
-            name="password"
-            value={password}
-            placeholder="123456"
-            onChange={this.handleChange}
-          />
-        </label>
-        <br />
-        <button>Submit</button>
+              id="password"
+              type="password"
+              name="password"
+              value={password}
+              placeholder="123456"
+              onChange={this.handleChange}
+            />
+          </label>
+          <br />
+          <button>Submit</button>
+        </div>
       </form>
     )
   }

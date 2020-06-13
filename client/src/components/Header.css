@@ -1,7 +1,27 @@
 .header {
   background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
 
 }
+
+
+.signin-signup {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.signup {
+  display: flex;
+  text-align: center;
+  
+}
+
+
+
+
+
 
 /* .signin {
 
