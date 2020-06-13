@@ -29,8 +29,12 @@ export default function Header(props) {
       {
         props.currentUser && (
           <nav>
-            <NavLink to="/myposts">My Posts</NavLink>
-            <NavLink to="/allposts">All Posts</NavLink>
+            <div className="myposts-link">
+              <NavLink to="/myposts">My Posts</NavLink>
+            </div>
+            <div className="allposts-link">
+              <NavLink to="/allposts">All Posts</NavLink>
+            </div>
           </nav>
         )
       }
