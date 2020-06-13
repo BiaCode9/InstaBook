@@ -27,6 +27,11 @@
 
 }
 
+.logout-button {
+  width: 100px;
+  height: 25px;
+  border-radius: 2px;
+}
 
 
 

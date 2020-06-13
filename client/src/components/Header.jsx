@@ -12,7 +12,7 @@ export default function Header(props) {
       {
         props.currentUser
           ?
-          <>{props.currentUser.username}<button onClick={props.handleLogout}>Logout</button></>
+          <>{props.currentUser.username}<button className="logout-button" onClick={props.handleLogout}>Logout</button></>
           :
           <>
             <div className="signin-signup">
