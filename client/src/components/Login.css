@@ -16,3 +16,19 @@
   width: 350px;
   height: 50vh;
   }
+
+
+  .welcomeback-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+   
+    font-size: 25px;
+
+  }
+
+  .login-button {
+    
+   
+  
+  }

@@ -28,8 +28,10 @@ export default class Login extends Component {
           password: ""
         })
       }}>
-        <h3>Login</h3>
         <div className='form-container-login'>
+          <div className="login-title">
+            <h3>Welcome Back!</h3>
+          </div>
           <label htmlFor="username">User Name:
           <input
               id="username"
@@ -52,7 +54,9 @@ export default class Login extends Component {
             />
           </label>
           <br />
-          <button>Submit</button>
+          <div className="login-button">
+            <button>Login to InstaBook </button>
+          </div>
         </div>
       </form>
     )
