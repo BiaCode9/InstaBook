@@ -4,6 +4,7 @@ import Login from './Login';
 import Register from './Register';
 import { getAllPosts, createPost, deletePost, getAllUserPosts } from '../services/posts';
 import ShowPosts from './ShowPosts';
+import ShowUserPosts from './ShowUserPosts';
 import CreatePost from './CreatePost';
 
 
@@ -12,11 +13,16 @@ export default class Main extends Component {
     super(props)
     this.state = {
       posts: [],
+      userPosts: []
     }
   }
 
   componentDidMount() {
     this.getPosts();
+  }
+
+  clearUserPosts = () => {
+    this.setState({ userPosts: [] })
   }
 
 
@@ -27,8 +33,8 @@ export default class Main extends Component {
 
 
   getUserPosts = async () => {
-    const posts = await getAllUserPosts(this.props.currentUser.id);
-    this.setState({ posts });
+    const userPosts = await getAllUserPosts(this.props.currentUser.id);
+    this.setState({ userPosts });
   }
 
   postPost = async (postData) => {
@@ -69,13 +75,25 @@ export default class Main extends Component {
           />
 
         )} />
-        <Route path='/posts' render={() => (
+        <Route path='/myposts' render={() => (
+
+          <ShowUserPosts
+            posts={this.state.userPosts}
+            currentUser={this.props.currentUser}
+            destroyPost={this.destroyPost}
+            getUserPosts={this.getUserPosts}
+            clearUserPosts={this.clearUserPosts}
+          />
+
+        )} />
+
+        <Route path='/allposts' render={() => (
 
           <ShowPosts
             posts={this.state.posts}
             currentUser={this.props.currentUser}
             destroyPost={this.destroyPost}
-          // getUserPosts={this.getUserPosts}
+            getPosts={this.getPosts}
           />
 
         )} />

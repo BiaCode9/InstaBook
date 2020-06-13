@@ -1,17 +1,20 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function ShowPosts(props) {
+
+export default function ShowUserPosts(props) {
   const { posts, currentUser, destroyPost } = props;
   console.log(currentUser)
 
   useEffect(() => {
-    getPosts()
-  }, [])
-  const getPosts = async () => {
-
-    await props.getPosts()
-
+    getAllUserPosts()
+  }, [currentUser])
+  const getAllUserPosts = async () => {
+    if (currentUser) {
+      await props.getUserPosts()
+    } else {
+      props.clearUserPosts()
+    }
   }
 
   return (
@@ -37,7 +40,7 @@ export default function ShowPosts(props) {
         ))
       }
       <br />
-      {currentUser && <Link to='/new/post'><button>Create</button></Link>}
+      {currentUser && <Link to='/new/post'>Create</Link>}
     </>
   )
 }
