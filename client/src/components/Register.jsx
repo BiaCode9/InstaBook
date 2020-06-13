@@ -89,7 +89,7 @@ export default class Register extends Component {
             />
           </label>
           <br />
-          <button className="signup-button">Happy to Help!</button>
+          <button className="signup-button">Welcome</button>
         </div>
       </form>
 

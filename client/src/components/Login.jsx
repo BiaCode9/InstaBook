@@ -57,7 +57,7 @@ export default class Login extends Component {
             </label>
             <br />
 
-            <button className="login-button">Your InstaBook! </button>
+            <button className="login-button">Submit </button>
 
           </div>
         </form>
