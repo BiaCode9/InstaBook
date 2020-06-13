@@ -2,7 +2,7 @@
   background-color: blueviolet;
   display: flex;
   justify-content: space-around;
-
+  
 }
 
 
@@ -16,6 +16,12 @@
   display: flex;
   text-align: center;
   
+}
+
+.instabook-logo {
+  /* margin: 20px; */
+
+
 }
 
 
