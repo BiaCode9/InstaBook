@@ -27,6 +27,8 @@ export default function ShowUserPosts(props) {
           <React.Fragment key={post.id}>
             <p>{post.name}</p>
             <p>{post.location}</p>
+            <p>{post.startdate}</p>
+            <p>{post.enddate}</p>
             <p>{post.description}</p>
             {
               currentUser && currentUser.id === post.user_id && (
