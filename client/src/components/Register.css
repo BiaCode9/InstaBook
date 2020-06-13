@@ -1,7 +1,7 @@
 .form-container-signup {
   border-radius: 5px;
   /* background: white,; */
-  background-color: whitesmoke;
+  background-color: rgb(250, 246, 246);
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -13,8 +13,8 @@
   box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  width: 400px;
-  height: 40vh;
+  width: 430px;
+  height: 42vh;
   
  
   }
