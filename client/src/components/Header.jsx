@@ -16,12 +16,14 @@ export default function Header(props) {
           :
           <>
             <nav>
-              <div className="signin">
-                <Link to='/user/login'>Sign In</Link>
-              </div>
-              <div className="signup">
-                <Link to='/user/register'>Sign Up</Link>
-              </div>
+              <ul>
+                <div className="signin">
+                  <Link to='/user/login'>Sign In</Link>
+                </div>
+                <div className="signup">
+                  <Link to='/user/register'>Sign Up</Link>
+                </div>
+              </ul>
             </nav>
 
           </>

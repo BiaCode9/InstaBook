@@ -34,7 +34,6 @@ export default class Register extends Component {
           password: ""
         })
       }}>
-        <h3>Sign Up</h3>
         <div className='form-container-signup'>
           <div className="joinus-title">
             <h3>Join Us!</h3>

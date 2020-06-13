@@ -33,3 +33,11 @@ display: flex;
 
 
 }
+
+ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 10;
+  display: flex;
+  justify-content: space-between;
+}
