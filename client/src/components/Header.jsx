@@ -1,26 +1,32 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 export default function Header(props) {
   return (
-    <div>
-      <h1>InstaBook</h1>
-
+    <div className="header">
+      <div className="instabook-logo">
+        <h1>InstaBook</h1>
+      </div>
       {
         props.currentUser
           ?
           <>{props.currentUser.username}<button onClick={props.handleLogout}>Logout</button></>
           :
           <>
-            <Link to='/user/login'>Sign In</Link>
-            <Link to='/user/register'>Sign Up</Link>
+            <div className="signin">
+              <Link to='/user/login'>Sign In</Link>
+            </div>
+            <div className="signup">
+              <Link to='/user/register'>Sign Up</Link>
+            </div>
           </>
       }
       <hr />
       {
         props.currentUser && (
           <nav>
-            <NavLink to="/posts">My Posts</NavLink>
+            <NavLink to="/myposts">My Posts</NavLink>
             <NavLink to="/allposts">All Posts</NavLink>
           </nav>
         )
