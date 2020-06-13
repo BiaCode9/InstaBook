@@ -25,7 +25,8 @@
   justify-content: center;
   margin-top: 15px;
   /* font-family: 'Roboto', sans-serif; */
-  font-size: 30px;
+  font-size: 35px;
+  font-family: cursive;
 }
 
 .signup-button {
@@ -33,7 +34,8 @@
   height: 50px;
   width: 175px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: cursive;
   
  
  }
