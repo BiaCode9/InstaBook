@@ -18,9 +18,11 @@ export default class CreatePost extends Component {
   }
 
   render() {
+
     const { name, location, description, startdate, enddate } = this.state;
     const { postPost, history } = this.props;
     return (
+
       <form onSubmit={(e) => {
         e.preventDefault();
         postPost(this.state);
@@ -34,7 +36,9 @@ export default class CreatePost extends Component {
         })
       }}>
         <hr />
+
         <h3>Create Post</h3>
+
         <label htmlFor="title">Job Title:</label>
         <input
           id="id"
@@ -67,7 +71,6 @@ export default class CreatePost extends Component {
           name='enddate'
           onChange={this.handleChange}
         />
-
 
 
         <label htmlFor="post">Post:</label>

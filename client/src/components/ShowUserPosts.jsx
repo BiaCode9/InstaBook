@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './ShowUserPosts.css'
 
 
 export default function ShowUserPosts(props) {
@@ -18,9 +19,12 @@ export default function ShowUserPosts(props) {
   }
 
   return (
-    <>
+    <body className="post-container">
+
+
       <hr />
-      <h3>Posts</h3>
+
+      <h3>My Job Listings</h3>
       {
         // getAllUserPosts() &&
         posts.map(post => (
@@ -31,6 +35,7 @@ export default function ShowUserPosts(props) {
             <p>{post.enddate}</p>
             <p>{post.description}</p>
             {
+
               currentUser && currentUser.id === post.user_id && (
                 <>
                   <button>Edit</button>
@@ -43,6 +48,8 @@ export default function ShowUserPosts(props) {
       }
       <br />
       {currentUser && <Link to='/new/post'>Create</Link>}
-    </>
+
+
+    </body>
   )
 }

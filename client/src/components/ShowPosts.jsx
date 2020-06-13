@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './ShowPosts.css'
+
 
 export default function ShowPosts(props) {
   const { posts, currentUser, destroyPost } = props;
@@ -15,7 +17,8 @@ export default function ShowPosts(props) {
   }
 
   return (
-    <>
+    <body className="post-show-container">
+
       <hr />
       <h3>Posts</h3>
       {
@@ -40,6 +43,7 @@ export default function ShowPosts(props) {
       }
       <br />
       {currentUser && <Link to='/new/post'><button>Create</button></Link>}
-    </>
+
+    </body>
   )
 }
