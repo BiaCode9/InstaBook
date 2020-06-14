@@ -27,7 +27,7 @@ class Post extends PureComponent {
         <p>Location: {post.location}</p>
         <p>Start Date: {post.startdate}</p>
         <p>End Date: {post.enddate}</p>
-        <p>Job Description: {post.description}</p>
+        <p>Description: {post.description}</p>
         {
           currentUser && currentUser.id === post.user_id && (
             <>
