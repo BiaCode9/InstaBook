@@ -1,7 +1,7 @@
 .form-container-login {
   border-radius: 5px;
   /* background: white,; */
-  background-color: rgb(250, 246, 246);
+  background-color: rgba(250, 246, 246, .95);
   text-align: left;
   display: flex;
   flex-direction: column;
