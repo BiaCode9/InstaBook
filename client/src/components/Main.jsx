@@ -52,6 +52,15 @@ export default class Main extends Component {
     }))
   }
 
+  // editPost = async (postData) => {
+  //   const editPost = await editPost(postData);
+  //   this.setState(prevState => ({
+  //     posts: [...prevState.posts, editPost]
+  //   }))
+  // }
+
+
+
   // createComment = async(post.id) => {
   //   const newComment = await createComment(post.id);
   //   this.setState(prevState.posts.map((posts) => {

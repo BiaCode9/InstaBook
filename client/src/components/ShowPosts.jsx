@@ -4,6 +4,8 @@ import './ShowPosts.css'
 import Post from './Post'
 
 
+
+
 export default function ShowPosts(props) {
   const { posts, currentUser, destroyPost } = props;
   console.log(currentUser)

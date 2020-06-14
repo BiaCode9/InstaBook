@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react'
+import EditPost from './EditPost'
+import { Link } from 'react-router-dom';
 
 class Post extends PureComponent {
   constructor(props) {
@@ -32,19 +34,26 @@ class Post extends PureComponent {
           currentUser && currentUser.id === post.user_id && (
             <>
               <div className="edit-delete">
-                <button>Edit</button>
+                <button>{currentUser && <Link to='/edit/post/'><div className="edit-button">Edit</div></Link>}</button>
                 <button onClick={() => destroyPost(post.id)}>Delete</button>
               </div>
             </>
           )
         }
+
+
+
+
+
+
         {post.comments.map(comment => (
           <p>{comment.description}</p>
         ))}
-
-        <textarea name="comment" value={this.state.comment} placeholder="write your comment here"
-          onChange={this.handleChange}
-        />
+        <div className="comment-box">
+          <textarea name="comment" value={this.state.comment} placeholder="write your comment here"
+            onChange={this.handleChange}
+          />
+        </div>
       </React.Fragment>
 
 
