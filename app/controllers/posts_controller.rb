@@ -9,12 +9,13 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
 
-    render json: @posts
+    render json: @posts, include: [{ user: { only: %i[id username] } }, { comments: { include: { user: { only: %i[id username] } } } }]
   end
 
   def user_index
     @posts = @current_user.posts
-    render json: @posts
+
+    render json: @posts, include: [{ user: { only: %i[id username] } }, { comments: { include: { user: { only: %i[id username] } } } }]
   end
 
   # GET /posts/1
