@@ -37,8 +37,8 @@ class Post extends PureComponent {
           currentUser && currentUser.id === post.user_id && (
             <>
               <div className="edit-delete">
-                <button>{currentUser && <Link to='/edit/post/'><div className="edit-button">Edit</div></Link>}</button>
-                <button onClick={() => destroyPost(post.id)}>Delete</button>
+                <button className="edit-button">{currentUser && <Link to='/edit/post/'>Edit</Link>}</button>
+                <button className="delete-button" onClick={() => destroyPost(post.id)}>Delete</button>
               </div>
             </>
           )

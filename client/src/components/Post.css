@@ -16,3 +16,28 @@ padding-right: 20px;
 
 } */
 
+.edit-button {
+  background-color: powderblue; 
+   height: 50px;
+   width: 100px;
+   border-radius: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   box-shadow: 0 12px 18px #999;
+   
+}
+
+.edit-button:hover {background-color: #2e94c4}
+
+.delete-button {
+  background-color: powderblue; 
+   height: 50px;
+   width: 100px;
+   border-radius: 5px;
+   font-size: 18px;
+   font-weight: bold;
+   box-shadow: 0 12px 18px #999;
+   
+}
+
+.delete-button:hover {background-color: #2e94c4}
