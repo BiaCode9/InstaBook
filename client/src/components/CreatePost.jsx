@@ -38,56 +38,59 @@ export default class CreatePost extends Component {
           })
         }}>
 
-          <hr />
+          <div className="post-show-container">
 
-          <h3>Create Post</h3>
-
-          <label htmlFor="title">Job Title:</label>
-          <input
-            id="id"
-            type="text"
-            value={name}
-            name='name'
-            onChange={this.handleChange}
-          />
-          <label htmlFor="title">Location:</label>
-          <input
-            id="id"
-            type="text"
-            value={location}
-            name='location'
-            onChange={this.handleChange}
-          />
-          <label htmlFor="title">Start Date:</label>
-          <input
-            id="id"
-            type="text"
-            value={startdate}
-            name='startdate'
-            onChange={this.handleChange}
-          />
-          <label htmlFor="title">End Date:</label>
-          <input
-            id="id"
-            type="text"
-            value={enddate}
-            name='enddate'
-            onChange={this.handleChange}
-          />
+            <hr />
 
 
-          <label htmlFor="post">Post:</label>
-          <textarea
-            className="textarea-description"
-            rows={10}
-            placeholder='Description'
-            value={description}
-            name='description'
-            required
-            onChange={this.handleChange}
-          />
-          <button>Submit</button>
+            <h3>Create Post</h3>
 
+            <label htmlFor="title">Job Title:</label>
+            <input
+              id="id"
+              type="text"
+              value={name}
+              name='name'
+              onChange={this.handleChange}
+            />
+            <label htmlFor="title">Location:</label>
+            <input
+              id="id"
+              type="text"
+              value={location}
+              name='location'
+              onChange={this.handleChange}
+            />
+            <label htmlFor="title">Start Date:</label>
+            <input
+              id="id"
+              type="text"
+              value={startdate}
+              name='startdate'
+              onChange={this.handleChange}
+            />
+            <label htmlFor="title">End Date:</label>
+            <input
+              id="id"
+              type="text"
+              value={enddate}
+              name='enddate'
+              onChange={this.handleChange}
+            />
+
+
+            <label htmlFor="post">Post:</label>
+            <textarea
+              className="textarea-description"
+              rows={10}
+              placeholder='Description'
+              value={description}
+              name='description'
+              required
+              onChange={this.handleChange}
+            />
+            <button>Submit</button>
+          </div>
         </form>
       </div>
 
