@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import EditPost from './EditPost'
 import { Link } from 'react-router-dom';
+import './Post.css'
+
 
 class Post extends PureComponent {
   constructor(props) {

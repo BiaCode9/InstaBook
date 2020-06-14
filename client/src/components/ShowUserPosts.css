@@ -37,7 +37,7 @@
 .create-button:hover {background-color: #2e94c4}
 
 
-.edit-delete {
+/* .edit-delete {
   display: flex;
   justify-content: space-around;
 
@@ -50,7 +50,7 @@
 .edit-button {
   margin-left: 10px;
   color: green;
-}
+} */
 
 
 

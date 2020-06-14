@@ -1,0 +1,11 @@
+.comment-box {
+  margin-bottom: 120px;
+  margin-top: 20px;
+}
+
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+  
+  margin-bottom: 20px;
+}
