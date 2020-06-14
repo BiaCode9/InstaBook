@@ -22,11 +22,12 @@ class Post extends PureComponent {
     } = this.props
     return (
       <React.Fragment key={post.id}>
-        <p>Name: {post.name}</p>
+        <p>User: {post.user.username}</p>
+        <p>Job Position: {post.name}</p>
         <p>Location: {post.location}</p>
         <p>Start Date: {post.startdate}</p>
         <p>End Date: {post.enddate}</p>
-        <p>Description: {post.description}</p>
+        <p>Job Description: {post.description}</p>
         {
           currentUser && currentUser.id === post.user_id && (
             <>
