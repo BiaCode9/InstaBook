@@ -6,7 +6,7 @@ class EditPost extends Component {
     super(props)
 
     this.state = {
-
+      user_id: "",
       name: "",
       location: "",
       description: "",
