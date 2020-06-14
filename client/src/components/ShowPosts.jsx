@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ShowPosts.css'
 import Post from './Post'
-
+import EditPost from './EditPost'
 
 
 
@@ -31,7 +31,7 @@ export default function ShowPosts(props) {
         ))
       }
       <br />
-      {currentUser && <Link to='/new/post'><button>Create</button></Link>}
+      {currentUser && <Link to='/new/post'><button className="create-button">Create</button></Link>}
 
     </div>
   )
