@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class CreatePost extends Component {
   state =
     {
+      user_id: "",
       name: "",
       location: "",
       description: "",
@@ -20,7 +21,7 @@ export default class CreatePost extends Component {
   render() {
 
 
-    const { name, location, description, startdate, enddate } = this.state;
+    const { user_id, name, location, description, startdate, enddate } = this.state;
     const { postPost, history } = this.props;
     return (
       <div className="create-container">
@@ -30,6 +31,7 @@ export default class CreatePost extends Component {
           postPost(this.state);
           history.push('/posts');
           this.setState({
+            user_id: "",
             name: "",
             location: "",
             description: "",
@@ -44,6 +46,15 @@ export default class CreatePost extends Component {
 
 
             <h3>Create Post</h3>
+
+            <label htmlFor="title">User:</label>
+            <input
+              id="id"
+              type="text"
+              value={user_id}
+              name='user_id'
+              onChange={this.handleChange}
+            />
 
             <label htmlFor="title">Job Title:</label>
             <input
