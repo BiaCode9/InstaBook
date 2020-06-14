@@ -6,6 +6,7 @@ import { getAllPosts, createPost, deletePost, getAllUserPosts } from '../service
 import ShowPosts from './ShowPosts';
 import ShowUserPosts from './ShowUserPosts';
 import CreatePost from './CreatePost';
+import EditPost from './EditPost';
 
 
 export default class Main extends Component {
@@ -51,7 +52,19 @@ export default class Main extends Component {
     }))
   }
 
+  // createComment = async(post.id) => {
+  //   const newComment = await createComment(post.id);
+  //   this.setState(prevState.posts.map((posts) => {
+  //     post.comments.push(newComment);
+  //     return 
+  //   }
 
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.currentUser !== this.props.currentUser) {
+      this.getUserPosts()
+    }
+  }
 
   render() {
     return (
@@ -105,8 +118,20 @@ export default class Main extends Component {
           />
         )} />
 
+        <Route path='/edit/post/:post_id' render={(props) => (
+          <EditPost
+            {...props}
+            post={this.state.userPosts.find((post) => {
+              return parseInt(props.match.params.post_id) === post.id
+            })}
+            putPost={this.putPost}
+          />
+        )} />
+
 
       </main>
     )
   }
 }
+
+

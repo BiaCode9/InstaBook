@@ -35,3 +35,23 @@
 }
 
 .create-button:hover {background-color: #2e94c4}
+
+
+.edit-delete {
+  display: flex;
+  justify-content: space-around;
+
+  margin-bottom: 60px;
+ 
+
+}
+
+
+.edit-button {
+  margin-left: 10px;
+  color: green;
+}
+
+
+
+
