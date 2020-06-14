@@ -1,22 +1,30 @@
 .create-container {
-  border-radius: 3px;
-  display: flex;
-  align-content: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-  margin: 0 auto;
-  flex: 0 1 auto;
-  align-self: auto;
-  /*recommend 1920 / 1080 max based on usage stats, use 100% to that point*/
-  width: 100%;
-  max-width: 900px;
-  height: 100%;
-  max-height: 600px;
+  border-radius: 5px;
   background-color: rgb(250, 246, 246);
-  -webkit-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 96px 0px rgba(0,0,0,0.75);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 40px;
+  justify-content: space-evenly;
+  margin: 65px auto;
+  box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.5);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
   
 }
+
+.submit-button {
+  background-color: powderblue; 
+  height: 50px;
+  width: 175px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 12px 18px #999;
+  
+ }
