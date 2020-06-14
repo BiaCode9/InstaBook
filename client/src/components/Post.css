@@ -6,6 +6,13 @@
 .edit-delete {
   display: flex;
   justify-content: space-around;
+ 
   
   margin-bottom: 20px;
 }
+
+/* .edit-button {
+padding-right: 20px;
+
+} */
+

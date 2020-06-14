@@ -25,6 +25,7 @@ class Post extends PureComponent {
 
     } = this.props
     return (
+
       <React.Fragment key={post.id}>
         <p>User: {post.user.username}</p>
         <p>Job Position: {post.name}</p>
@@ -57,6 +58,7 @@ class Post extends PureComponent {
           />
         </div>
       </React.Fragment>
+      // </div>
 
 
     )
