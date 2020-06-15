@@ -30,6 +30,8 @@
   
  }
 
+ .submit-button:hover {background-color: #2e94c4}
+
  .create-post {
   display: flex;
   justify-content: center;

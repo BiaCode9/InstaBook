@@ -33,7 +33,7 @@ export default function ShowPosts(props) {
         ))
       }
       <br />
-      {currentUser && <Link to='/new/post'><button className="create-button">Create</button></Link>}
+      {currentUser && <Link className="create-link" to='/new/post'><button className="create-button">Create</button></Link>}
 
     </div>
   )
