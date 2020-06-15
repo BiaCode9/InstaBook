@@ -110,16 +110,16 @@ src
 
 | Task                      | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------    | :------: | :------------: | :-----------: | :---------: |
-| Build Rails Server        |    L     |     5 hrs      |               |     TBD     |
-| Implement Authentication  |    M     |     3 hrs      |               |     TBD     |
+| Build Rails Server        |    M     |     5 hrs      |               |     TBD     |
+| Implement Authentication  |    H     |     3 hrs      |               |     TBD     |
 | Create CRUD Actions       |    H     |     6 hrs      |               |     TBD     |
 | Create React Components   |    H     |     12 hrs     |               |     TBD     |
 | Render Data in Components |    H     |     8 hrs      |               |     TBD     |
-| Utilize React Router      |    H     |     3 hrs      |               |     TBD     |
+| Utilize React Router      |    M     |     3 hrs      |               |     TBD     |
 | Utilize Authentication    |    H     |     6 hrs      |               |     TBD     |
 | Style Components          |    H     |     10 hrs      |               |     TBD     |
-| Style layout with Flex Box|    H     |     8 hrs      |               |     TBD     |
-| Implement Media Queries   |    H     |     4 hrs      |               |     TBD     |
+| Style layout with Flex Box|    M     |     8 hrs      |               |     TBD     |
+| Implement Media Queries   |    M     |     4 hrs      |               |     TBD     |
 | TOTAL                     |          |     65 hrs     |               |     TBD     |
 
 
