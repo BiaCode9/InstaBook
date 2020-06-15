@@ -25,8 +25,9 @@ export default function ShowUserPosts(props) {
 
 
       <hr />
-
-      <h3>MY JOB LISTINGS:</h3>
+      <div className="job-listings">
+        <h3>MY JOB LISTINGS:</h3>
+      </div>
       {
         // getAllUserPosts() &&
         posts.map(post => (
