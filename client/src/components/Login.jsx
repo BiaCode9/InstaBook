@@ -34,8 +34,8 @@ export default class Login extends Component {
             <div className="welcomeback-title">
               <h3>Welcome Back!</h3>
             </div>
-            <label htmlFor="username">User Name:
-          <input
+            <label htmlFor="username">
+              <input className="welcome-input-box"
                 id="username"
                 type="text"
                 name="username"
@@ -45,8 +45,8 @@ export default class Login extends Component {
               />
             </label>
             <br />
-            <label htmlFor="password">Password:
-          <input
+            <label htmlFor="password">
+              <input className="welcome-input-box"
                 id="password"
                 type="password"
                 name="password"

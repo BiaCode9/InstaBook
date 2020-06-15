@@ -38,8 +38,8 @@ export default class Register extends Component {
           <div className="joinus-title">
             <h3>Join Us!</h3>
           </div>
-          <label htmlFor="firstname">First Name:
-          <input
+          <label htmlFor="firstname">
+            <input className="welcome-input-box"
               id="firstname"
               type="text"
               name="firstname"
@@ -49,8 +49,8 @@ export default class Register extends Component {
             />
           </label>
           <br />
-          <label htmlFor="lastname">Last Name:
-          <input
+          <label htmlFor="lastname">
+            <input className="welcome-input-box"
               id="lastname"
               type="text"
               name="lastname"
@@ -60,8 +60,8 @@ export default class Register extends Component {
             />
           </label>
           <br />
-          <label htmlFor="email">E-mail:
-          <input
+          <label htmlFor="email">
+            <input className="welcome-input-box"
               id="email"
               type="text"
               name="email"
@@ -71,8 +71,8 @@ export default class Register extends Component {
             />
           </label>
           <br />
-          <label htmlFor="username">Create Username:
-          <input
+          <label htmlFor="username">
+            <input className="welcome-input-box"
               id="username"
               type="text"
               name="username"
@@ -82,8 +82,8 @@ export default class Register extends Component {
             />
           </label>
           <br />
-          <label htmlFor="password">Create Password:
-          <input
+          <label htmlFor="password">
+            <input className="welcome-input-box"
               id="password"
               type="password"
               name="password"

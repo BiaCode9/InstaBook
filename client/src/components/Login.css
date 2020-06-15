@@ -13,8 +13,8 @@
   box-shadow: 0 0 17px 2px rgba(0, 0, 0, 0.5);
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  width: 435px;
-  height: 42vh;
+  width: 750px;
+  height: 60vh;
   
  
   }
@@ -52,4 +52,10 @@
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  .welcome-input-box {
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
   }

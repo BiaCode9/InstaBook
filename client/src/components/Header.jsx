@@ -7,12 +7,11 @@ export default function Header(props) {
     <div className="header">
       <div className="instabook-logo">
         <img src="https://i.imgur.com/HxMMOy3.png" alt="instabook-logo" />
-        {/* <h1>InstaBook</h1> */}
       </div>
       {
         props.currentUser
           ?
-          <>{props.currentUser.username}<button className="logout-button" onClick={props.handleLogout}>Logout</button></>
+          <><div className="current-user-name">Welcome, {props.currentUser.username}</div><button className="logout-button" onClick={props.handleLogout}>Logout</button></>
           :
           <>
             <nav>

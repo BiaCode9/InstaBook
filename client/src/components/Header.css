@@ -1,64 +1,47 @@
 .header {
-  /* background-color:rgba(238, 218, 235, 0.5); */
   background-color:rgba(71, 69, 69, 0.20);
-  /* background-color: rgb(201, 79, 79); */
   display: flex;
   justify-content: space-around;
   box-shadow: 0 0 28px 18px rgba(93, 193, 223, 0.40);
-  border: 10px solid transparent;
-  
+  border: 10px solid transparent; 
 }
 
 
 .instabook-logo {
-  /* font-size: 28px; */
   margin-top: -225px;
   margin-left: -350px;
   margin-bottom: -300px;
   transform: rotate(-27deg);
-  /* color: whitesmoke; */
-/* font-family: cursive; */
-  /* margin: 20px; */
-
 }
 
 .logout-button {
-  width: 100px;
-  height: 25px;
-  border-radius: 2px;
+   border-radius: 2px;
   background-color: powderblue; 
   height: 30px;
-  width: 125px;
+  max-width: 200px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
   box-shadow: 0 12px 18px #999;
   margin-top: 10px;
-  
+  margin-right: 400px;  
  }
 
- .logout-button:hover {background-color: #2e94c4}
+.logout-button:hover {background-color: #2e94c4}
 
 
-/* 
-nav {
-display: flex;
-
-align-content: flex-end;
-} */
-
-.signin-signup-container {
-  display: flex;
-
-  justify-content: flex-end;
-  font-size: 20px;
-
+.current-user-name {
+  color: blue;
+  margin-top: 15px;
+  margin-right: 50px;
 }
 
-/* .signin {
-  display: flex;
-font-size: 
-} */
+
+.signin-signup-container {
+  display: inline-flex;
+  font-size: 20px;
+  justify-content: space-between;
+} 
 
 
 img:hover {
