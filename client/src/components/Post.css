@@ -24,6 +24,8 @@ padding-right: 20px;
    font-size: 18px;
    font-weight: bold;
    box-shadow: 0 12px 18px #999;
+   margin-top: 20px;
+   margin-right: 10px;
    
 }
 
@@ -37,64 +39,54 @@ padding-right: 20px;
    font-size: 18px;
    font-weight: bold;
    box-shadow: 0 12px 18px #999;
+   margin-top: 20px;
+   margin-left: 10px;
    
 }
 
 .delete-button:hover {background-color: #2e94c4}
 
-.user, .job-position, .location, .start-date, .end-date   {
-  color: blue;
+.user, .job-position, .location, .start-date, .end-date, .description   {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 20px;
+  /* font-family: 'Times New Roman', Times, serif; */
+  text-shadow: 2px 2px 4px #2e94c4;
+  text-shadow: 6px 6px 6px #aaa;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 20px;
 
 }
 
-.description {
+.user-entry {
   color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  text-align: center;
 }
 
-/* .job-position {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+.job-entry {
+  color:  purple;
+  text-align: center;
 }
 
-.location {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+.location-entry {
+  color: pink;
+  text-align: center;
 }
 
-.start-date {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+.start-date-entry, .end-date-entry {
+color: green;
+text-align: center;
 }
 
-.end-date {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+.description-entry {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 600px;
+  text-align: center;
 }
 
-.description {
-  color: blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
- */
+
+
+
