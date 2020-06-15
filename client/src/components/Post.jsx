@@ -33,7 +33,7 @@ class Post extends PureComponent {
         <div className="single-post-container">
 
           <p><div className="user"></div><div className="user-entry">
-            {post.user.username}</div></p>
+            {post.user && post.user.username}</div></p>
 
 
           <p><div className="position">POSITION:</div><div className="job-entry">{post.name}</div></p>
@@ -66,7 +66,7 @@ class Post extends PureComponent {
 
 
 
-          {post.comments.map(comment => (
+          {post.comments && post.comments.map(comment => (
             <p>{comment.description}</p>
           ))}
           <div className="comment-box">
