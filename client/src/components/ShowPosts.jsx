@@ -23,7 +23,9 @@ export default function ShowPosts(props) {
     <div className="post-show-container">
 
       <hr />
-      <h3>JOB POSITIONS NEEDED !</h3>
+      <div className="job-positions-needed">
+        <h3>JOB POSITIONS AVAILABLE:</h3>
+      </div>
       {
         // getAllUserPosts() &&
         posts.map(post => (
