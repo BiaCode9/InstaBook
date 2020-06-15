@@ -47,11 +47,21 @@ export default class Main extends Component {
   }
 
   destroyPost = async (id) => {
+    console.log(id)
     await deletePost(id);
     this.setState(prevState => ({
       posts: prevState.posts.filter(post => post.id !== id)
     }))
   }
+
+  destroyUserPost = async (id) => {
+    console.log(id)
+    await deletePost(id);
+    this.setState(prevState => ({
+      userPosts: prevState.userPosts.filter(post => post.id !== id)
+    }))
+  }
+
 
   // editPost = async (postData) => {
   //   const editPost = await editPost(postData);
@@ -103,7 +113,7 @@ export default class Main extends Component {
           <ShowUserPosts
             posts={this.state.userPosts}
             currentUser={this.props.currentUser}
-            destroyPost={this.destroyPost}
+            destroyPost={this.destroyUserPost}
             getUserPosts={this.getUserPosts}
             clearUserPosts={this.clearUserPosts}
           />
