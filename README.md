@@ -79,9 +79,6 @@ Things you may want to cover:
 src
 |__ assets/
       |__ fonts
-      |__ graphics
-      |__ images
-      |__ wireframes
 |__ components/
       |__ Header.jsx
       |__ Navigation.jsx
@@ -104,10 +101,10 @@ src
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
 |  Login           | functional |   y   |   y   | _This will validate current user to sign in._                                                                |
 |  Register        | functional |   y   |   y   | _This will save new user credentials to local storage and grant access.                              |
-|  CreatePost      | functional |   y   |   y   | _The new post created will render the post info via props._      |
-|  UpdatePost      | functional |   y   |   y   | _The updated post will render the post info via props._         |
+|  CreatePost      |    class   |   y   |   y   | _The new post created will render the post info via props._      |
+|  UpdatePost      |    class   |   y   |   y   | _The updated post will render the post info via props._         |
 |  ShowPosts       | functional |   y   |   y   | _This will render all users posts._                         |
-|  ShowUserPosts   |   class    |   y   |   n   | _The showPosts will render only current user's posts.              |
+|  ShowUserPosts   |  functional |   y   |   n   | _The showPosts will render only current user's posts.              |
 |    Footer        | functional |   n   |   n   | _The footer will show copyright and link to portfolio._ |
 
 #### Component Estimates
