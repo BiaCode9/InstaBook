@@ -71,19 +71,22 @@ class Post extends PureComponent {
 
 
 
+          <div className="comments-container">
+            <div className="comment-title">
+              <h2>Comments:</h2>
+            </div>
+            {post.comments && post.comments.map(comment => (
+              <p>{comment.description}</p>
+            ))}
 
-
-
-          {post.comments && post.comments.map(comment => (
-            <p>{comment.description}</p>
-          ))}
-          <div className="comment-box">
-            <form onSubmit={this.handleSubmit}>
-              <textarea name="comment" value={this.state.description} placeholder="write your comment here"
-                onChange={this.handleChange}
-              />
-              <button>Save</button>
-            </form>
+            <div className="comment-box">
+              <form onSubmit={this.handleSubmit}>
+                <textarea className="comment" name="comment" value={this.state.description} placeholder="write your comment here"
+                  onChange={this.handleChange}
+                />
+                <button className="save-button">Save</button>
+              </form>
+            </div>
           </div>
         </div>
       </React.Fragment>

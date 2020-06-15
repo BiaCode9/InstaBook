@@ -1,5 +1,15 @@
 .comment-box {
   margin: 60px 60px;
+  
+}
+
+.comment {
+  height: 75px;
+  width: 300px;
+}
+
+.comment-title {
+  margin-top: 20px;
 }
 
 .edit-delete {
@@ -9,6 +19,18 @@
  
   
   margin-bottom: 20px;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  background-color: rgba(125,210,220,.10); 
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px #999 ;
 }
 
 /* .edit-button {
@@ -105,6 +127,7 @@ margin: 20px 20px;
 display: flex;
 flex-direction: column;
 border-radius: 5px;
+/* background-color: powderblue;  */
 
 
 }
@@ -114,7 +137,26 @@ border-radius: 5px;
   color: black;
 }
 
+.save-button {
+  background-color: powderblue; 
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 12px 18px #999;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  
+  
+}
 
+.save-button:hover {background-color: #2e94c4}
 /* 
 .input-box {
   border-radius: 5px;
