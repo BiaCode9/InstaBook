@@ -42,10 +42,59 @@ padding-right: 20px;
 
 .delete-button:hover {background-color: #2e94c4}
 
-.user {
+.user, .job-position, .location, .start-date, .end-date   {
   color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
+
+.description {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* .job-position {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.location {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.start-date {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.end-date {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.description {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+ */
