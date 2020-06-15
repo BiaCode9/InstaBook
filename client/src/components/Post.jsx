@@ -27,12 +27,24 @@ class Post extends PureComponent {
     return (
 
       <React.Fragment key={post.id}>
-        <p>User: {post.user.username}</p>
-        <p>Job Position: {post.name}</p>
-        <p>Location: {post.location}</p>
-        <p>Start Date: {post.startdate}</p>
-        <p>End Date: {post.enddate}</p>
-        <p>Description: {post.description}</p>
+
+        <p><div className="user">User:</div> {post.user.username}</p>
+
+
+        <p><div className="job-position">Job Position:</div> {post.name}</p>
+
+
+        <p><div className="location">Location: </div> {post.location}</p>
+
+
+        <p><div className="start-date">Start Date: {post.startdate}</div></p>
+
+
+        <p><div className="end-date">End Date: {post.enddate}</div></p>
+
+
+        <p> <div className="description">Description: {post.description} </div></p>
+
         {
           currentUser && currentUser.id === post.user_id && (
             <>
