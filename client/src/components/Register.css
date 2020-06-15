@@ -47,3 +47,13 @@
  @media screen and (max-width:1024px){
   img.responsive {width: 200px;}
 }
+
+@media screen and (max-width:1024px){
+  .form-container-signup {
+    width: 550px;
+    height: 50vh;
+    margin: 125px auto;
+
+
+  }
+}
