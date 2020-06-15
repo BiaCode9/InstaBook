@@ -4,7 +4,7 @@ import './CreatePost.css'
 export default class CreatePost extends Component {
   state =
     {
-      user_id: "",
+
       name: "",
       location: "",
       description: "",
@@ -29,9 +29,8 @@ export default class CreatePost extends Component {
 
         e.preventDefault();
         postPost(this.state);
-        history.push('/posts');
+        history.push('/myposts');
         this.setState({
-          user_id: "",
           name: "",
           location: "",
           description: "",

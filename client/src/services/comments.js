@@ -12,13 +12,15 @@ export const getOneComment = async (id) => {
   return resp.data;
 }
 
-export const createComment = async (commentData) => {
-  const resp = await api.post('/comments', { comment: commentData });
+export const createComment = async (id, commentData) => {
+  let data = { description: commentData }
+  console.log(data)
+  const resp = await api.post(`/posts/${id}/comments`, { comment: data });
   return resp.data;
 }
 
 export const updateComment = async (id, commentData) => {
-  const resp = await api.put(`/foods/${id}`, { comment: commentData });
+  const resp = await api.put(`/comments/${id}`, { comment: commentData });
   return resp.data;
 }
 

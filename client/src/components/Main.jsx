@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
-import { getAllPosts, createPost, deletePost, getAllUserPosts } from '../services/posts';
+import { createComment } from '../services/comments';
+import { getAllPosts, createPost, deletePost, updatePost, getAllUserPosts } from '../services/posts';
 import ShowPosts from './ShowPosts';
 import ShowUserPosts from './ShowUserPosts';
 import CreatePost from './CreatePost';
@@ -63,21 +64,34 @@ export default class Main extends Component {
   }
 
 
-  // editPost = async (postData) => {
-  //   const editPost = await editPost(postData);
-  //   this.setState(prevState => ({
-  //     posts: [...prevState.posts, editPost]
-  //   }))
-  // }
+  editPost = async (id, postData) => {
+    const post = await updatePost(id, postData);
+    console.log(post.id)
+    this.setState(prevState => ({
+      userPosts: prevState.userPosts.map(p =>
+        p.id === id ? post : p)
+    }))
+  }
 
 
+  createNewComment = async (id, commentData) => {
+    const comment = await createComment(id, commentData);
+    console.log(comment)
+    this.setState(prevState => ({
+      posts: prevState.posts.map(p => {
+        if (p.id === id) {
+          p.comments.push(comment)
+          return p
+        }
+        else {
+          return p
+        }
 
-  // createComment = async(post.id) => {
-  //   const newComment = await createComment(post.id);
-  //   this.setState(prevState.posts.map((posts) => {
-  //     post.comments.push(newComment);
-  //     return 
-  //   }
+      }
+      )
+    }))
+  }
+
 
 
   componentDidUpdate(prevProps) {
@@ -116,6 +130,7 @@ export default class Main extends Component {
             destroyPost={this.destroyUserPost}
             getUserPosts={this.getUserPosts}
             clearUserPosts={this.clearUserPosts}
+            createComment={this.createNewComment}
           />
 
         )} />
@@ -127,6 +142,7 @@ export default class Main extends Component {
             currentUser={this.props.currentUser}
             destroyPost={this.destroyPost}
             getPosts={this.getPosts}
+            createComment={this.createNewComment}
           />
 
         )} />
@@ -144,7 +160,7 @@ export default class Main extends Component {
             post={this.state.userPosts.find((post) => {
               return parseInt(props.match.params.post_id) === post.id
             })}
-            putPost={this.putPost}
+            editPost={this.editPost}
           />
         )} />
 

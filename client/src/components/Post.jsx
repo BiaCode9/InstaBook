@@ -9,14 +9,22 @@ class Post extends PureComponent {
     super(props)
 
     this.state = {
-      comment: ""
+      description: ""
 
     }
   }
 
   handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value })
+    const { value } = e.target;
+    this.setState({ description: value })
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault()
+    console.log("here")
+    let id = this.props.post.id
+    this.props.createComment(id, this.state.description)
+
   }
 
   render() {
@@ -54,7 +62,7 @@ class Post extends PureComponent {
             currentUser && currentUser.id === post.user_id && (
               <>
                 <div className="edit-delete">
-                  <button className="edit-button">{currentUser && <Link className="edit-link" to='/edit/post/'>Edit</Link>}</button>
+                  <button className="edit-button">{currentUser && <Link className="edit-link" to={`/edit/post/${post.id}`}>Edit</Link>}</button>
                   <button className="delete-button" onClick={() => destroyPost(post.id)}>Delete</button>
                 </div>
               </>
@@ -70,9 +78,12 @@ class Post extends PureComponent {
             <p>{comment.description}</p>
           ))}
           <div className="comment-box">
-            <textarea name="comment" value={this.state.comment} placeholder="write your comment here"
-              onChange={this.handleChange}
-            />
+            <form onSubmit={this.handleSubmit}>
+              <textarea name="comment" value={this.state.description} placeholder="write your comment here"
+                onChange={this.handleChange}
+              />
+              <button>Save</button>
+            </form>
           </div>
         </div>
       </React.Fragment>
