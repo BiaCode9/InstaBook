@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import EditPost from './EditPost'
+// import EditPost from './EditPost'
 import { Link } from 'react-router-dom';
 import './Post.css'
 
@@ -32,7 +32,7 @@ class Post extends PureComponent {
           {post.user.username}</div></p>
 
 
-        <p><div className="job-position">POSITION:</div><div className="job-entry">{post.name}</div></p>
+        <p><div className="position">POSITION:</div><div className="job-entry">{post.name}</div></p>
 
 
         <p><div className="location">LOCATION:</div><div className="location-entry">{post.location}</div></p>

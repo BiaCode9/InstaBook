@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ShowPosts.css'
 import Post from './Post'
-import EditPost from './EditPost'
+// import EditPost from './EditPost'
 
 
 

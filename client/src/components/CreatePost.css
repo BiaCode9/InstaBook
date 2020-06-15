@@ -28,3 +28,19 @@
   box-shadow: 0 12px 18px #999;
   
  }
+
+ .create-post {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 35px;
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* text-shadow: 2px 2px 4px #2e94c4; */
+  text-shadow: 6px 6px 6px #aaa;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+

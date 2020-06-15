@@ -22,7 +22,7 @@ export default class CreatePost extends Component {
   render() {
 
 
-    const { user_id, name, location, description, startdate, enddate } = this.state;
+    const { name, location, description, startdate, enddate } = this.state;
     const { postPost, history } = this.props;
     return (
       <form className="create-container" onSubmit={(e) => {
@@ -41,19 +41,20 @@ export default class CreatePost extends Component {
       }}>
 
         <hr />
+        <div className="create-post">
+          <h3>CREATE POST:</h3>
+        </div>
 
-        <h3>Create Post</h3>
-
-        <label htmlFor="title">User:</label>
+        {/* <label htmlFor="title"></label>
         <input
           id="id"
           type="text"
           value={user_id}
           name='user_id'
           onChange={this.handleChange}
-        />
+        /> */}
 
-        <label htmlFor="title">Job Title:</label>
+        <label htmlFor="title"><div className="position">Position:</div></label>
         <input
           id="id"
           type="text"
@@ -61,7 +62,7 @@ export default class CreatePost extends Component {
           name='name'
           onChange={this.handleChange}
         />
-        <label htmlFor="title">Location:</label>
+        <label htmlFor="title"><div className="location">Location:</div></label>
         <input
           id="id"
           type="text"
@@ -69,7 +70,7 @@ export default class CreatePost extends Component {
           name='location'
           onChange={this.handleChange}
         />
-        <label htmlFor="title">Start Date:</label>
+        <label htmlFor="title"><div className="start-date">Start Date:</div></label>
         <input
           id="id"
           type="text"
@@ -77,7 +78,7 @@ export default class CreatePost extends Component {
           name='startdate'
           onChange={this.handleChange}
         />
-        <label htmlFor="title">End Date:</label>
+        <label htmlFor="title"><div className="end-date">End Date:</div></label>
         <input
           id="id"
           type="text"
@@ -87,7 +88,7 @@ export default class CreatePost extends Component {
         />
 
 
-        <label htmlFor="post">Post:</label>
+        <label htmlFor="post"><div className="end-date">Job Description:</div></label>
         <textarea
           className="textarea-description"
           rows={10}
