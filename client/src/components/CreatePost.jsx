@@ -55,7 +55,7 @@ export default class CreatePost extends Component {
         /> */}
 
         <label htmlFor="title"><div className="position">Position:</div></label>
-        <input
+        <input className="input-box"
           id="id"
           type="text"
           value={name}
@@ -63,7 +63,7 @@ export default class CreatePost extends Component {
           onChange={this.handleChange}
         />
         <label htmlFor="title"><div className="location">Location:</div></label>
-        <input
+        <input className="input-box"
           id="id"
           type="text"
           value={location}
@@ -71,7 +71,7 @@ export default class CreatePost extends Component {
           onChange={this.handleChange}
         />
         <label htmlFor="title"><div className="start-date">Start Date:</div></label>
-        <input
+        <input className="input-box"
           id="id"
           type="text"
           value={startdate}
@@ -79,7 +79,7 @@ export default class CreatePost extends Component {
           onChange={this.handleChange}
         />
         <label htmlFor="title"><div className="end-date">End Date:</div></label>
-        <input
+        <input className="input-box"
           id="id"
           type="text"
           value={enddate}

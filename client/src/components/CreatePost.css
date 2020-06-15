@@ -26,6 +26,7 @@
   font-size: 18px;
   font-weight: bold;
   box-shadow: 0 12px 18px #999;
+  margin-top: 60px;
   
  }
 
@@ -44,3 +45,12 @@
 
 
 
+.input-box {
+  border-radius: 5px;
+}
+
+.textarea-description {
+  border-radius: 5px;
+  border: light black;
+  width: 600px;
+}
