@@ -97,6 +97,7 @@ font-size: 30px;
 
 .single-post-container {
 border: solid black;
+box-shadow: 0 4px 30px #999 ;
 width: 800px;
 height: 100%px;
 align-items: center;
