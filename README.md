@@ -81,14 +81,13 @@ src
       |__ fonts
 |__ components/
       |__ Header.jsx
-      |__ Navigation.jsx
-      |__ Profile.jsx
-      |__ CreatePost.jsx
-      |__ UpdatePost.jsx
-      |__ ShowPost.jsx
-      |__ ShowPosts.jsx
       |__ Login.jsx
       |__ Register.jsx
+      |__ Profile.jsx
+      |__ CreatePost.jsx
+      |__ EditPost.jsx
+      |__ ShowPosts.jsx
+      |__ ShowUserPosts.jsx
 |__ services/
 
 ```
