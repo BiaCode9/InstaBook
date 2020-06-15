@@ -102,30 +102,29 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|  Login       | functional |   y   |   y   | _                                                                |
-|  Register    | functional |   y   |   y   | _                                                                |
-|  CreatePost  | functional |   y   |   y   | _The new post created will render the post info via props._      |
-|  UpdatePost  | functional |   y   |   y   | _The updated post  will render the post info via props._         |
-|  ShowPost    | functional |   y   |   y   | _This will be the individual post page._                         |
-|  ShowPosts   |   class    |   y   |   n   | _The showPosts will render the posts on one page_                |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Login           | functional |   y   |   y   | _This will validate current user to sign in._                                                                |
+|  Register        | functional |   y   |   y   | _This will save new user credentials to local storage and grant access.                              |
+|  CreatePost      | functional |   y   |   y   | _The new post created will render the post info via props._      |
+|  UpdatePost      | functional |   y   |   y   | _The updated post will render the post info via props._         |
+|  ShowPosts       | functional |   y   |   y   | _This will render all users posts._                         |
+|  ShowUserPosts   |   class    |   y   |   n   | _The showPosts will render only current user's posts.              |
+|    Footer        | functional |   n   |   n   | _The footer will show copyright and link to portfolio._ |
 
 #### Component Estimates
 
 | Task                      | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------    | :------: | :------------: | :-----------: | :---------: |
 | Build Rails Server        |    L     |     5 hrs      |               |     TBD     |
-| Implement Authentication  |    M     |     5 hrs      |               |     TBD     |
+| Implement Authentication  |    M     |     3 hrs      |               |     TBD     |
 | Create CRUD Actions       |    H     |     6 hrs      |               |     TBD     |
 | Create React Components   |    H     |     12 hrs     |               |     TBD     |
-| Render Data in Components |    H     |     6 hrs      |               |     TBD     |
+| Render Data in Components |    H     |     8 hrs      |               |     TBD     |
 | Utilize React Router      |    H     |     3 hrs      |               |     TBD     |
 | Utilize Authentication    |    H     |     6 hrs      |               |     TBD     |
-| Style Components          |    H     |     8 hrs      |               |     TBD     |
-| Style layout with Flex Box|    H     |     6 hrs      |               |     TBD     |
-| Implement Media Queries   |    H     |     6 hrs      |               |     TBD     |
-| TOTAL                     |          |     64 hrs     |               |     TBD     |
+| Style Components          |    H     |     10 hrs      |               |     TBD     |
+| Style layout with Flex Box|    H     |     8 hrs      |               |     TBD     |
+| Implement Media Queries   |    H     |     4 hrs      |               |     TBD     |
+| TOTAL                     |          |     65 hrs     |               |     TBD     |
 
 
 <br>
@@ -142,18 +141,18 @@ src
 
 ## Post-MVP
 
-- GPS functionality
+- Geo-location enabled
 - More Animation
-- Add a chatbot for those signed online
-- Search box by title, content, or username
+- Add a chatbot/dm for those signed online
+- Search bar for job by title or content or username
 - Calendar component
-- Real-time alerts
+- Real-time job match alerts while signed in, via text, via e-mail
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
 
 ## Code Issues & Resolutions
 
