@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 // import EditPost from './EditPost'
 import { Link } from 'react-router-dom';
 import './Post.css'
+import Comment from './Comment';
 
 
 class Post extends PureComponent {
@@ -19,12 +20,12 @@ class Post extends PureComponent {
     this.setState({ description: value })
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault()
     console.log("here")
     let id = this.props.post.id
-    this.props.createComment(id, this.state.description)
-
+    await this.props.createComment(id, this.state.description)
+    this.setState({ description: "" })
   }
 
   render() {
@@ -76,7 +77,7 @@ class Post extends PureComponent {
               <h2>Comments:</h2>
             </div>
             {post.comments && post.comments.map(comment => (
-              <p>{comment.description}</p>
+              <Comment comment={comment} />
             ))}
 
             <div className="comment-box">

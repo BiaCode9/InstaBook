@@ -6,7 +6,7 @@ import Post from './Post'
 
 
 export default function ShowUserPosts(props) {
-  const { posts, currentUser, destroyPost, createComment } = props;
+  const { posts, currentUser, destroyPost, createComment, history } = props;
   console.log(currentUser)
 
   useEffect(() => {
@@ -17,6 +17,7 @@ export default function ShowUserPosts(props) {
       await props.getUserPosts()
     } else {
       props.clearUserPosts()
+      history.push('/user/login')
     }
   }
 

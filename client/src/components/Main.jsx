@@ -36,6 +36,7 @@ export default class Main extends Component {
 
 
   getUserPosts = async () => {
+    if (this.props.currentUser === null) return;
     const userPosts = await getAllUserPosts(this.props.currentUser.id);
     this.setState({ userPosts });
   }
@@ -87,8 +88,17 @@ export default class Main extends Component {
           return p
         }
 
-      }
-      )
+      }),
+      userPosts: prevState.userPosts.map(p => {
+        if (p.id === id) {
+          p.comments.push(comment)
+          return p
+        }
+        else {
+          return p
+        }
+
+      }),
     }))
   }
 
@@ -96,6 +106,7 @@ export default class Main extends Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.currentUser !== this.props.currentUser) {
+
       this.getUserPosts()
     }
   }
@@ -122,9 +133,10 @@ export default class Main extends Component {
           />
 
         )} />
-        <Route path='/myposts' render={() => (
+        <Route path='/myposts' render={(props) => (
 
           <ShowUserPosts
+            {...props}
             posts={this.state.userPosts}
             currentUser={this.props.currentUser}
             destroyPost={this.destroyUserPost}

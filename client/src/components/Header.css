@@ -28,7 +28,7 @@
   font-weight: bold;
   box-shadow: 0 12px 18px #999;
   margin-top: 10px;
-  margin-right: 400px;  
+  margin-right: 10px;  
  }
 
 .logout-button:hover {background-color: #2e94c4}
@@ -93,23 +93,29 @@ img:hover {
 }
 
 
-/* @media(max-width: 1024px){
 
-.instabook-logo {
-  margin-top: -225px;
-  margin-left: -350px;
-  margin-bottom: -300px;
-  transform: rotate(-27deg);
 
+ @media(max-width: 1024px){
+
+  .instabook-logo {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: -300px;
+    transform: rotate(-27deg);
+  }
+  .instabook-logo img {
+    width: 500px;
+    height: 500px;
+    max-width: 50vw;
+    max-height: 30vw;
+  }
 }
- */
 
 
 
-
-
-@media screen and (max-width:1024px){
+/* 
+/* @media screen and (max-width:1024px){
   img.responsive {width: 200px;}
-}
+} */
 
-
+ 

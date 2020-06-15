@@ -11,7 +11,14 @@ export default function Header(props) {
       {
         props.currentUser
           ?
-          <><div className="current-user-name">Welcome, {props.currentUser.username}</div><button className="logout-button" onClick={props.handleLogout}>Logout</button></>
+          <><div className="current-user-name">Welcome, {props.currentUser.username}</div><button className="logout-button" onClick={props.handleLogout}>Logout</button>
+            <div className="myposts-link">
+              <NavLink to="/myposts">My Posts</NavLink>
+            </div>
+            <div className="allposts-link">
+              <NavLink to="/allposts">All Posts</NavLink>
+            </div></>
+
           :
           <>
             <div className="signin-signup-container">
@@ -32,18 +39,6 @@ export default function Header(props) {
           </>
       }
       <hr />
-      {
-        props.currentUser && (
-          <nav>
-            <div className="myposts-link">
-              <NavLink to="/myposts">My Posts</NavLink>
-            </div>
-            <div className="allposts-link">
-              <NavLink to="/allposts">All Posts</NavLink>
-            </div>
-          </nav>
-        )
-      }
     </div >
   )
 }
