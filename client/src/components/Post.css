@@ -163,3 +163,8 @@ border-radius: 5px;
   height: 40px;
   width: 200px;
 } */
+
+
+@media screen and (max-width:1024px){
+  img.responsive {width: 200px;}
+}

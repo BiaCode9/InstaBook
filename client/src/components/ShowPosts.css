@@ -51,3 +51,7 @@
   font-family: 'Montserrat', sans-serif;
 
 }
+
+@media screen and (max-width:1024px){
+  img.responsive {width: 200px;}
+}
