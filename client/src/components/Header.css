@@ -103,14 +103,16 @@ img:hover {
   .instabook-logo {
     margin-top: 0px;
     margin-left: 0px;
-    margin-bottom: -200px;
+    margin-bottom: 0px;
     transform: rotate(-27deg);
   }
   .instabook-logo img {
     width: 800px;
     height: 800px;
-    max-width: 70vw;
-    max-height: 50vw;
+    max-width: 80vw;
+    max-height: 60vw;
+    margin-top: -175px;
+   margin-left: -210px;
   }
 
   .header {
