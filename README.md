@@ -134,5 +134,4 @@ src
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
->>>>>>> fc8eb1ee582921121eb5366de07d1ff429c202af
+
