@@ -1,6 +1,5 @@
 ### _InstaBook is a real-time job post/search platform for last-minute job openings.  Users who are online or signed-up will get real-time job alerts for those posts that match their job description profile.  
 
-(i.e. If need someone to fill in for you because you are sick and you can’t just cancel while people who are actively searching will get alerts that match their job profile.)
 
 =======
 ### Goals
