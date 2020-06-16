@@ -11,8 +11,9 @@ export default function Comment({ comment, destroyComment }) {
         <div className="comment-description">
           {comment.description}
         </div>
+        <button className="delete-button-comment" onClick={() => destroyComment(comment.id, comment.post_id)}>Delete</button>
+
       </div>
-      <button className="delete-button-comment" onClick={() => destroyComment(comment.id, comment.post_id)}>Delete</button>
 
 
     </p>
