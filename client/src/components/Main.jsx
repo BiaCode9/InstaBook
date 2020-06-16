@@ -60,14 +60,14 @@ export default class Main extends Component {
     console.log(id)
     await deleteComment(id, postId);
     this.setState(prevState => ({
-      posts: prevState.posts.map(p => {
-        p.comments = p.comments.filter((c) => c.id !== id);
-        return p
-      }),
-      userPosts: prevState.userPosts.map(p => {
-        p.comments = p.comments.filter((c) => c.id !== id);
-        return p
-      }),
+      posts: prevState.posts.map(p => ({
+        ...p,
+        comments: p.comments.filter((c) => c.id !== id)
+      })),
+      userPosts: prevState.userPosts.map(p => ({
+        ...p,
+        comments: p.comments.filter((c) => c.id !== id)
+      })),
     }))
   }
 

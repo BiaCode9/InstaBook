@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
     @comment.user = @current_user
     @comment.post = @post
     if @comment.save
-      render json: @comment, status: :created
+      render json: @comment, include: :user, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
