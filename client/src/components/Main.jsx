@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
-import { createComment } from '../services/comments';
+import { createComment, deleteComment, updateComment } from '../services/comments';
 import { getAllPosts, createPost, deletePost, updatePost, getAllUserPosts } from '../services/posts';
 import ShowPosts from './ShowPosts';
 import ShowUserPosts from './ShowUserPosts';
@@ -53,6 +53,21 @@ export default class Main extends Component {
     await deletePost(id);
     this.setState(prevState => ({
       posts: prevState.posts.filter(post => post.id !== id)
+    }))
+  }
+
+  destroyUserComment = async (id, postId) => {
+    console.log(id)
+    await deleteComment(id, postId);
+    this.setState(prevState => ({
+      posts: prevState.posts.map(p => {
+        p.comments = p.comments.filter((c) => c.id !== id);
+        return p
+      }),
+      userPosts: prevState.userPosts.map(p => {
+        p.comments = p.comments.filter((c) => c.id !== id);
+        return p
+      }),
     }))
   }
 
@@ -143,8 +158,8 @@ export default class Main extends Component {
             getUserPosts={this.getUserPosts}
             clearUserPosts={this.clearUserPosts}
             createComment={this.createNewComment}
+            destroyComment={this.destroyUserComment}
           />
-
         )} />
 
         <Route path='/allposts' render={() => (
@@ -155,6 +170,7 @@ export default class Main extends Component {
             destroyPost={this.destroyPost}
             getPosts={this.getPosts}
             createComment={this.createNewComment}
+            destroyComment={this.destroyUserComment}
           />
 
         )} />

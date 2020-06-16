@@ -27,10 +27,13 @@ class Post extends PureComponent {
     await this.props.createComment(id, this.state.description)
     this.setState({ description: "" })
   }
-
+  destroyCommentHelper = async (id, postId) => {
+    await this.props.destroyComment(id, postId)
+    this.setState({ description: "" })
+  }
   render() {
     const {
-      post, destroyPost, currentUser
+      post, destroyPost, destroyComment, currentUser
 
     } = this.props
     return (
@@ -77,7 +80,7 @@ class Post extends PureComponent {
               <h2>Comments:</h2>
             </div>
             {post.comments && post.comments.map(comment => (
-              <Comment comment={comment} />
+              <Comment comment={comment} destroyComment={this.destroyCommentHelper} />
             ))}
 
             <div className="comment-box">
@@ -85,7 +88,8 @@ class Post extends PureComponent {
                 <textarea className="comment" name="comment" value={this.state.description} placeholder="write your comment here"
                   onChange={this.handleChange}
                 />
-                <button className="save-button">Save</button>
+                <button className="save-button">Submit</button>
+
               </form>
             </div>
           </div>

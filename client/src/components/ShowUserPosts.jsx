@@ -6,7 +6,7 @@ import Post from './Post'
 
 
 export default function ShowUserPosts(props) {
-  const { posts, currentUser, destroyPost, createComment, history } = props;
+  const { posts, currentUser, destroyPost, destroyComment, createComment, history } = props;
   console.log(currentUser)
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function ShowUserPosts(props) {
       {
         // getAllUserPosts() &&
         posts.map(post => (
-          <Post currentUser={currentUser} post={post} destroyPost={destroyPost} createComment={createComment} />
+          <Post currentUser={currentUser} post={post} destroyPost={destroyPost} destroyComment={destroyComment} createComment={createComment} />
         ))
       }
       <br />
