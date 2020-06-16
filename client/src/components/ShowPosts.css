@@ -55,12 +55,16 @@
 @media screen and (max-width:1024px){
   img.responsive {width: 200px;}
 }
-
 @media screen and (max-width:1024px){
   .post-show-container{
   margin: 80px auto;
- 
+  width: 75%;
+  height: 75%;
 
+  }
 
+  .job-positions-needed {
+    background-color: powderblue;
+    box-shadow: 0 12px 18px #999;
   }
 }
