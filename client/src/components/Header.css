@@ -11,7 +11,7 @@
 
 .instabook-logo {
   margin-top: -225px;
-  margin-left: -350px;
+  margin-left: -325px;
   margin-bottom: -300px;
   transform: rotate(-27deg);
 
@@ -120,6 +120,49 @@ img:hover {
   }
 }
 
+
+@media(max-width: 720px){
+
+  .instabook-logo {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    transform: rotate(0deg);
+  }
+  .instabook-logo img {
+    width: 600px;
+    height: 800px;
+    max-width: 1000vw;
+    max-height: 250vw;
+    margin-top: 185px;
+   margin-left: 250px;
+  }
+
+  .header {
+    height: 175px;
+    width: 100%;
+
+  }
+
+  /* .welcome {
+    font-size: 20px;
+  }
+
+  .current-user-name {
+    font-size: 20px;
+  } */
+
+  /* .signin-signup-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    font-size: 20px;
+  }
+
+  .signin, .signup {
+    font-size: 20px;
+  } */
+}
 
 
 /* 

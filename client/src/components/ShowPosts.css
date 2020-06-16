@@ -52,9 +52,7 @@
 
 }
 
-@media screen and (max-width:1024px){
-  img.responsive {width: 200px;}
-}
+
 @media screen and (max-width:1024px){
   .post-show-container{
   margin: 80px auto;
@@ -66,5 +64,23 @@
   .job-positions-needed {
     background-color: powderblue;
     box-shadow: 0 12px 18px #999;
+  }
+}
+
+@media screen and (max-width:720px){
+  .post-show-container{
+  margin-top: 250px;
+  width: 548px;
+  height: 65%;
+  align-content: center;
+  margin-top: 500px;
+
+  }
+
+  .job-positions-needed {
+    margin-top: 50px;
+    background-color: powderblue;
+    box-shadow: 0 12px 18px #999;
+    font-size: 150%;
   }
 }

@@ -165,6 +165,22 @@ border-radius: 5px;
 } */
 
 
-@media screen and (max-width:1024px){
-  img.responsive {width: 200px;}
+
+
+@media screen and (max-width:720px){
+  .single-post-container{
+  margin-top: 250px;
+  width: auto;
+  height: 65%;
+  align-content: center;
+  margin-top: 40px;
+
+  }
+
+  .job-positions-needed {
+    background-color: powderblue;
+    box-shadow: 0 12px 18px #999;
+    font-size: 150%;
+    margin-top: 200px;
+  }
 }

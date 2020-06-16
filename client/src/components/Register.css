@@ -57,3 +57,16 @@
 
   }
 }
+
+@media screen and (max-width:720px){
+  .form-container-signup{
+  margin-top: 250px;
+  width: 80%;
+  height: 75%;
+  align-content: center;
+  margin-left: 85px;
+
+  }
+
+ 
+}
