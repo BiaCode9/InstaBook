@@ -1,28 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+_InstaBook is a real-time job post/search platform for last-minute job openings.  Users who are online or signed-up will get real-time job alerts for those posts that match their job description profile.  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-<<<<<<< HEAD
-* ...
 =======
 ### Goals
 
@@ -152,5 +131,4 @@ src
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
->>>>>>> fc8eb1ee582921121eb5366de07d1ff429c202af
+

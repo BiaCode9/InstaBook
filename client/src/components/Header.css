@@ -46,23 +46,28 @@
 
 .signin-signup-container {
   display: flex;
-  font-size: 20px;
-
-  /* flex-direction: row; */
-
-
-
+  font-size: 24px;
   
 
 } 
-/* /* 
-.signin {
-margin-right: 60px auto;
-display: flex;
-flex-direction: row-reverse;
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 
 
+/* .signin {
+  
 } */
+
+
+.signin {
+margin-right: 30px;
+
+
+
+}
 
 /* .signup {
 margin-left: 60px; */
