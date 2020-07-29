@@ -62,6 +62,8 @@ class Post extends PureComponent {
 
           <p><div className="description">DESCRIPTION:</div><div className="description-entry">{post.description}</div></p>
 
+          <p><div className="contact">CONTACT INFO:</div><div className="contact-entry">{post.contact}</div></p>
+
           {
             currentUser && currentUser.id === post.user_id && (
               <>

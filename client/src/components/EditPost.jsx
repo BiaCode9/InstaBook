@@ -13,6 +13,7 @@ class EditPost extends Component {
       description: "",
       startdate: "",
       enddate: "",
+      contact: "",
 
     }
   }
@@ -39,7 +40,7 @@ class EditPost extends Component {
   render() {
 
 
-    const { name, location, description, startdate, enddate } = this.state;
+    const { name, location, description, startdate, enddate, contact } = this.state;
     const { editPost, history } = this.props;
     return (
 
@@ -53,7 +54,8 @@ class EditPost extends Component {
           location: "",
           description: "",
           startdate: "",
-          enddate: ""
+          enddate: "",
+          contact: "",
         })
       }}>
 
@@ -101,6 +103,14 @@ class EditPost extends Component {
           type="text"
           value={enddate}
           name='enddate'
+          onChange={this.handleChange}
+        />
+        <label htmlFor="title"><div className="contact">Contact Info:</div></label>
+        <input className="input-box"
+          id="id"
+          type="text"
+          value={contact}
+          name='contact'
           onChange={this.handleChange}
         />
 

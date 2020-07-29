@@ -39,7 +39,7 @@ export default function ShowUserPosts(props) {
       }
       <br />
 
-      <button className="create-button">{currentUser && <Link className="create-button" to='/new/post'>Create</Link>}</button>
+      <button className="create-button">{currentUser && <Link className="create" to='/new/post'>Create</Link>}</button>
 
 
     </div>

@@ -10,6 +10,7 @@ export default class CreatePost extends Component {
       description: "",
       startdate: "",
       enddate: "",
+      contact: "",
     }
 
   handleChange = (e) => {
@@ -22,7 +23,7 @@ export default class CreatePost extends Component {
   render() {
 
 
-    const { name, location, description, startdate, enddate } = this.state;
+    const { name, location, description, startdate, enddate, contact } = this.state;
     const { postPost, history } = this.props;
     return (
       <form className="create-container" onSubmit={(e) => {
@@ -33,9 +34,10 @@ export default class CreatePost extends Component {
         this.setState({
           name: "",
           location: "",
-          description: "",
           startdate: "",
-          enddate: ""
+          enddate: "",
+          description: "",
+          contact: "",
         })
       }}>
 
@@ -83,6 +85,14 @@ export default class CreatePost extends Component {
           type="text"
           value={enddate}
           name='enddate'
+          onChange={this.handleChange}
+        />
+        <label htmlFor="title"><div className="contact">Contact Info:</div></label>
+        <input className="input-box"
+          id="id"
+          type="text"
+          value={contact}
+          name='contact'
           onChange={this.handleChange}
         />
 

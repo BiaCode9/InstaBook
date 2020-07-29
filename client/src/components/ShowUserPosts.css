@@ -21,19 +21,19 @@
 
 .create-button {
   background-color: powderblue; 
-   height: 50px;
-   width: 175px;
-   border-radius: 5px;
-   font-size: 18px;
-   font-weight: bold;
-   box-shadow: 0 12px 18px #999;
-   text-decoration: none;
-   color: black;
-   
+  height: 50px;
+  width: 175px;
+  border-radius: 5px;
+  box-shadow: 0 12px 18px #999; 
 }
 
+.create {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
 
- 
 
 .create-button:hover {background-color: #2e94c4}
 
@@ -42,10 +42,8 @@
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  /* font-family: 'Roboto', sans-serif; */
   font-size: 35px;
   font-family: 'Times New Roman', Times, serif;
-  /* text-shadow: 2px 2px 4px #2e94c4; */
   text-shadow: 6px 6px 6px #aaa;
   font-family: 'Montserrat', sans-serif;
 
@@ -58,10 +56,9 @@
 
 @media screen and (max-width:1024px){
   .post-container{
-  margin: 80px auto;
-  width: 75%;
-  height: 75%;
-
+    margin: 80px auto;
+    width: 75%;
+    height: 75%;
   }
 
   .job-listings {
@@ -75,12 +72,11 @@
 
 @media screen and (max-width:720px){
   .post-container{
-  margin-top: 500px;
-  width: 548px;
-  height: 65%;
-  margin-top: 500px;
-  align-content: center;
-
+    margin-top: 500px;
+    width: 548px;
+    height: 65%;
+    margin-top: 500px;
+    align-content: center;
   }
 
   .job-listings {
