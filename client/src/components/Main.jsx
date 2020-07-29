@@ -162,9 +162,11 @@ export default class Main extends Component {
           />
         )} />
 
-        <Route path='/allposts' render={() => (
+        <Route path='/allposts' render={(props) => (
 
           <ShowPosts
+            {...props}
+            clearUserPosts={this.clearUserPosts}
             posts={this.state.posts}
             currentUser={this.props.currentUser}
             destroyPost={this.destroyPost}

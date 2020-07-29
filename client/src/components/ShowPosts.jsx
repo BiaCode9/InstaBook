@@ -7,15 +7,21 @@ import Post from './Post'
 
 
 export default function ShowPosts(props) {
-  const { posts, currentUser, destroyPost, destroyComment, createComment } = props;
+  const { posts, currentUser, destroyPost, destroyComment, createComment, history } = props;
   console.log(currentUser)
 
   useEffect(() => {
     getPosts()
-  }, [])
+  }, [currentUser])
   const getPosts = async () => {
-
-    await props.getPosts()
+    if (currentUser === null) {
+    }
+    else if (currentUser) {
+      await props.getPosts()
+    } else {
+      props.clearUserPosts()
+      history.push('/user/login')
+    }
 
   }
 

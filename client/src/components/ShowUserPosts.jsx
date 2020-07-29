@@ -13,7 +13,9 @@ export default function ShowUserPosts(props) {
     getAllUserPosts()
   }, [currentUser])
   const getAllUserPosts = async () => {
-    if (currentUser) {
+    if (currentUser === null) {
+    }
+    else if (currentUser) {
       await props.getUserPosts()
     } else {
       props.clearUserPosts()

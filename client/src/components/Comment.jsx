@@ -1,7 +1,7 @@
 import React from 'react'
 import './Comment.css'
 
-export default function Comment({ comment, destroyComment }) {
+export default function Comment({ comment, destroyComment, currentUser }) {
   return (
     <p>
       <div className="comments">
@@ -11,7 +11,10 @@ export default function Comment({ comment, destroyComment }) {
         <div className="comment-description">
           {comment.description}
         </div>
-        <button className="delete-button-comment" onClick={() => destroyComment(comment.id, comment.post_id)}>Delete</button>
+        {comment.user.id === currentUser.id &&
+          <button className="delete-button-comment" onClick={() => destroyComment(comment.id, comment.post_id)}>Delete</button>
+        }
+
 
       </div>
 

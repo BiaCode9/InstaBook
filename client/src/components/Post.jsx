@@ -80,7 +80,7 @@ class Post extends PureComponent {
               <h2>Comments:</h2>
             </div>
             {post.comments && post.comments.map(comment => (
-              <Comment comment={comment} destroyComment={this.destroyCommentHelper} />
+              <Comment currentUser={currentUser} comment={comment} destroyComment={this.destroyCommentHelper} />
             ))}
 
             <div className="comment-box">
